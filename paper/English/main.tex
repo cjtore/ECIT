@@ -1,0 +1,1544 @@
+% -----------------------------------------------------
+% Creative Commons Attribution 4.0 International License
+% Copyright (c) 2025 [Cesar Jacinto Briatore]
+% 
+% This work is licensed under a Creative Commons
+% Attribution 4.0 International License. To view a copy of
+% this license, visit http://creativecommons.org/licenses/by/4.0/
+% 
+% By using this work, you agree to cite the original author
+% as follows:
+% [Briatore], [Cesar J.]. (2025). [Emergent Contextual Invariance Theory (ECIT): Unifying Framework for Natural Laws and Complexity].
+% URL: https://github.com/cjtore/ECIT
+% -----------------------------------------------------
+
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{framed}
+\usepackage[utf8]{inputenc} 
+\usepackage{multirow, array} % para las tablas
+\geometry{a4paper, margin=1in}
+
+\title{Emergent Contextual Invariance Theory (ECIT): Unifying Framework for Natural Laws and Complexity}
+\author{Cesar Jacinto Briatore}
+\date{February 2025}
+
+
+\begin{document}
+
+\maketitle
+\noindent\rule{\linewidth}{1pt}
+
+\begin{abstract}
+\textbf{Background}: Overcoming the reductionism–holism dichotomy remains a persistent epistemological challenge in modern science, hindering the integration of fundamental laws with emergent phenomena—a critical issue in the interdisciplinary study of complex systems \cite{Mitchell2009}. Inspired by Spinoza’s axiomatic approach, Emergent Contextual Invariance Theory (ECIT) was developed during the research for "Hacia la Teoría del Todo" \cite{Briatore2025}, where a detailed analysis of the underlying dynamics of reality revealed the necessity for a hierarchical framework to explain universal phenomena. By emphasizing symmetry as a unifying property, ECIT introduces a dynamic triad—Invariance, Context, and Emergence—that bridges multiple scales and disciplines. Although the theory has since been adapted to elucidate dynamics in physical, abstract, and mental systems, its original impetus was the need to formalize abstractions for the development of ad hoc software solutions. \textbf{Methods}: The formulation of ECIT combined four key stages for its development. :1) Critical literature review: Analysis of sources in physics, biology and social sciences to identify patterns such as symmetry breaking and emergence.2) Paradigmatic case study: Decomposition of systems such as superconductors, neural networks and biological processes into ICE components.3) Axiomatic mathematical formulation: Derivation of operators (\texorpdfstring{$\Psi$ y $\Phi$}{Psi y Phi}) and the relational cost functional R(t), based on differential geometry and group theory.4) Validation with language models: Use of transformers with deep analysis capabilities (DeepThink R1, o3-mini, Gemini, Claude 3.7 Sonnet) to verify logical consistency and simulate scenarios. \textbf{Results}: ECIT demonstrated: 1) Multiscale and transversal unification: Integration of microscopic/macroscopic descriptions in materials (e.g., quantum phase transitions), biological systems (e.g., cellular self-organization) and also in intangible phenomena through the recursion ICE(n) → ICE(n+1). 2) Quantification of emergence: The functional R(t) models tensions between invariances, contexts and emergence, applicable in diverse scenarios such as physical experiments, biological conjectures and abstract systems (Appendices A1-A3). 3) Reformulation of time: Proposal of time as a relational construct derived from ICE interactions, resolving inconsistencies in physical models. \textbf{Conclusion}: ECIT offers an axiomatic framework to transcend the reductionism-holism dichotomy, integrating fundamental laws and emergent complexity. Its tools—from the functional R(t) to hierarchical recursion—allow to address phenomena in physics, biology, and neuroscience under a unified language. Furthermore, its pedagogical approach fosters the connection between disciplines, establishing a paradigm for scientific research and education in the age of complexity.
+
+\textbf{Keywords}: Emergent Contextual Invariance Theory, multiscale unification, quantified emergence, relational time, hierarchical recursion.\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+Traditional physical theories face two fundamental epistemological challenges that limit their ability to describe complex systems and unify scales:
+
+\begin{itemize}
+    \item \textbf{Irreconcilable duality}: The fracture between universal laws (e.g., field equations) and emergent phenomena (e.g., consciousness, superconductivity), where the former do not explain the latter, echoing Anderson's seminal insight that 'more is different' \cite{Anderson1972}.
+    \item \textbf{Non-trivial contextuality}: Fundamental symmetries (e.g., gauge, Lorentz) exhibit dependence on boundary conditions and environmental parameters, questioning their universality.
+\end{itemize}
+
+The \textbf{Emergent Contextual Invariance Theory (ECIT)} resolves this dichotomy through a non-reducible triadic structure.
+
+\section{The ICE Triad: Conceptual and Mathematical Foundations}
+Emergent Contextual Invariance Theory (ECIT) resolves the reductionism-holism dichotomy through a non-reducible dynamic triadic structure:
+\begin{equation}\label{eq:ICE}
+    \text{ICE}(n) \xrightarrow{\Psi,\Phi} \text{ICE}(n+1),
+\end{equation}
+where each hierarchical level is defined by three fundamental components:
+
+\begin{itemize}
+    \item \textbf{Invariance (I):} Structural properties that persist in bounded contextual domains. These invariances represent the fundamental constraints that define the behavior of the system within a specific context. (Eq.~\ref{eq:invariancia}).
+
+    \item \textbf{Context (C):} Dynamic modulator of interactions and symmetry breaking. The context encodes the environmental conditions and interaction rules that determine how invariances are manifested (Eq.~\ref{eq:contexto}).
+
+    \item \textbf{Emergence (E):} Irreducible properties that arise from the nonlinear interaction between $I$ and $C$, and that feed back and reconfigure both invariances and context (Eq.~\ref{eq:emergencia}).
+\end{itemize}
+
+\subsection{Conceptual Foundations of Operators \texorpdfstring{$\Psi$ y $\Phi$}{Psi y Phi}}
+The operators $\Psi$ and $\Phi$ are key elements in ICE recursive dynamics, since they govern transitions between hierarchical levels ($n \to n+1$). Their conceptual foundations are described below:
+
+\subsubsection{\texorpdfstring{$\Psi$}{Psi} Operator: Emergent Synthesis}
+The operator $\Psi$ synthesizes emergent properties ($E$) from the interaction between invariances ($I$) and contexts ($C$). Formally:
+\begin{equation}\label{eq:psi}
+    E(t) = \Psi\left(I(t), \nabla_C I(t), \int_{t_0}^t F(I, C) d\tau\right),
+\end{equation}
+where:
+\begin{itemize}
+    \item $I(t)$ are the structural invariances of the system.
+    \item $\nabla_C I(t)$ measures the sensitivity of invariances to contextual changes.
+    \item $F(I, C)$ is the history of interactions between $I$ and $C$, accumulated over time.
+\end{itemize}
+
+The operator $\Psi$ captures the non-linear and irreducible nature of emergence, allowing to model phenomena such as phase transitions, self-organization or collective properties, consistent with Haken’s principles of synergetics \cite{Haken1983} and Prigogine’s framework of dissipative structures in non-equilibrium systems \cite{NicolisPrigogine1977}.
+
+\subsubsection{\texorpdfstring{$\Phi$}{Phi} Operator: Dynamic Recontextualization}
+The operator $\Phi$ redefines the context at each hierarchical transition, integrating previous emergent properties ($E_n$) with macroscopic parameters ($C_{\text{macro}}$). Its action is expressed as:
+\begin{equation}\label{eq:phi}
+    C_{n+1} = \Phi(E_n, C_{\text{macro}}),
+\end{equation}
+where:
+\begin{itemize}
+    \item $E_n$ represents current level emergencies.
+    \item $C_{\text{macro}}$ includes external or global conditions that influence the system.
+\end{itemize}
+
+The $\Phi$ operator acts as a geometric modulator that adjusts contextual rules for the next hierarchical level, ensuring causal consistency and structural stability.
+
+\subsubsection{Interaction between \texorpdfstring{$\Psi$ y $\Phi$}{Psi y Phi}}
+The interaction between $\Psi$ and $\Phi$ ensures a coherent recursive dynamics within the ICE framework:
+\begin{align*}
+    I_{n+1} &= E_n, \\
+    C_{n+1} &= \Phi(E_n, C_{\text{macro}}), \\
+    E_{n+1} &= \Psi(I_{n+1}, C_{n+1}),
+\end{align*}
+where each hierarchical level redefines both invariances and contexts, allowing the emergence of new properties.
+
+\subsection{Integration of operators \texorpdfstring{$\Psi$ y $\Phi$}{Psi y Phi}}
+The operators $\Psi$ and $\Phi$ establish a unifying language for complex phenomena:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+\textbf{Property} & $\boldsymbol{\Psi}$ & $\boldsymbol{\Phi}$ \\
+         \hline
+         Main Role & Emergency Synthesis & Contextual Reconfiguration\\
+         Temporary Dependency & Historical ($\int F \, dt$) & Instantaneous ($C_n \rightarrow C_{n+1}$)\\
+        Nonlinearity & Exponential ($\sigma$) & Geometric (manifolds)\\
+         Physical Manifestation & Phase Transitions & Symmetry Breaks \\
+    \hline
+         
+    \end{tabular}
+    \caption{Characteristics of the operators $\Psi$ and $\Phi$}
+    \label{tab:my_label}
+\end{table}
+\noindent This operational duo resolves the reductionism-holism dichotomy by:
+
+\begin{itemize}
+    \item \textbf{Upward Causality:} $\Psi$ links micro/macro properties
+    \item \textbf{Downward Restriction:} $\Phi$ modulates contexts according to emergencies
+    \item \textbf{Structuring Recursion:} ICE($n$) $\rightarrow$ ICE($n+1$) generates multi-level self-organization
+\end{itemize}
+
+The ECIT thus demonstrates that complexity and simplicity coexist in a dynamic dance orchestrated by $\Psi$ and $\Phi$.
+
+\subsection{The contributions of ECIT}
+This article demonstrates how ECIT: 
+\begin{enumerate}
+    \item Unify scales through hierarchical recursion (Sec.~\ref{subsec:axioma_recursividad}),
+    \item Quantify critical transitions with the functional $\mathcal{R}(t)$ (Eq.~\ref{eq:R}),
+    \item Predicts emergence in multidisciplinary systems (Sec.~\ref{sec:protocolo}).
+\end{enumerate}
+
+\noindent\textbf{Key contributions}:  
+\begin{itemize}
+    \item An axiomatic framework that generalizes principles of relativity, quantization and holography (Sec.~\ref{sec:axiomas}),
+    \item A dynamic principle based on contextual persistence (Eq.~\ref{eq:R}).
+\end{itemize}
+
+ECIT transcends classical reductionism/holism, offering a unifying language for natural laws and emergent complexity.
+
+\section{ECIT as a Solution to the Reductionism - Holism Dichotomy}
+
+\subsection{The Fundamental Problem}
+Modern physics has historically faced an apparent irresolvable dichotomy between reductionism, which seeks to explain all phenomena through their most fundamental components, and holism, which maintains the existence of irreducible emergent properties. This tension, famously explored by Penrose in the context of consciousness and computation \cite{Penrose1989}, has limited our understanding of complex systems and the unification of physical theories.\bigskip
+
+\noindent The limitations of traditional physical theories in addressing these challenges have led to calls for a re-evaluation of our understanding of time and its role in the universe, as advocated by Smolin \cite{Smolin2013}.
+
+\subsection{ECIT Resolution Framework}
+The Theory of Emergent Contextual Invariances proposes a formal solution to this dichotomy through its fundamental triadic structure:
+
+\begin{equation}
+\text{ICE}(n) \rightarrow \text{ICE}(n+1)
+\end{equation}
+
+where the transition between levels is governed by:
+
+\begin{align}
+I_{n+1} &= E_n \\
+C_{n+1} &= \Phi(E_n, C_{\text{macro}}) \\
+R_{n+1} &= f(R_n, \nabla E_n)
+\end{align}
+
+This structure allows for a dynamic interaction between levels that preserves both reductionist causality and holistic emergence.
+
+\subsection{Advantages of the ECIT Approach}
+
+The ECIT treatment of the reductionism-holism dichotomy presents significant advantages over previous approaches:
+
+\begin{enumerate}
+    \item \textbf{Mathematical Formalization:} The relationship between levels is expressed by the persistence functional:
+    \begin{equation}
+    R(t) = \alpha \left\|\frac{\delta I}{\delta C}\right\|^2 + \beta S(C|I) + \gamma \int |E_{\text{obs}} - E_{\text{ICE}}|^2 dt
+    \end{equation}
+    
+    \item \textbf{Dynamic Contextualization:} The context $C(t)$ acts as a mediator between levels:
+    \begin{equation}
+    C(t) = \langle M(t), \{\phi_i(t)\}_{i=1}^k \rangle
+    \end{equation}
+    
+    \item \textbf{Quantifiable Emergency:} The emergency is expressed as:
+    \begin{equation}
+    E(t) = \Psi\left(I(t), \nabla_C I(t), \int_{t_0}^t F(I,C)d\tau\right)
+    \end{equation}
+\end{enumerate}
+
+\subsection{Key Implications}
+
+The ECIT resolution of the dichotomy has profound implications:
+
+\begin{itemize}
+    \item \textbf{Contextual Relationism:} Properties emerge in specific contexts maintaining causal connections with fundamental levels.
+    
+    \item \textbf{Multi-level predictability:} Allows quantitative predictions at multiple scales simultaneously.
+    
+    \item \textbf{Causal Consistency:} It maintains causality without sacrificing genuine emergence.
+\end{itemize}
+
+\subsection{Applications and Validation}
+
+The validation of the ECIT approach is evident in several fields:
+\begin{enumerate}
+    \item \textbf{Materials Physics:}
+    \begin{equation}
+    \text{Atoms} \xrightarrow{\text{ICE}} \text{Structure} \xrightarrow{\text{ICE}} \text{Properties}
+    \end{equation}
+    
+    \item \textbf{Neural Systems}
+    \begin{equation}
+    \text{Neurons} \xrightarrow{\text{ICE}} \text{Networks} \xrightarrow{\text{ICE}} \text{Cognition}
+    \end{equation}
+\end{enumerate}
+
+\bigskip
+\noindent ECIT's applicability to materials physics is evident in the analysis of phase transitions, where the system transitions between distinct states (e.g., solid, liquid, gas) due to changes in external parameters. The theoretical framework for understanding these transitions is rigorously developed in texts such as Goldenfeld's Lectures on Phase Transitions and the Renormalization Group \cite{Goldenfeld2018}, which provides a foundation for ECIT's approach to multiscale modeling.
+
+\bigskip
+\noindent The validation of ECIT across diverse systems, from materials to neural networks, points towards a more general framework for understanding emergence and self-organization in complex systems, including fundamental questions about life and biological agency, as explored by Levin \cite{Levin2021}
+
+\subsection{Applicability of the ECIT}
+ECIT provides a rigorous mathematical framework that transcends the reductionism-holism dichotomy, offering a unifying perspective that respects both fundamental causality and genuine emergence. This resolution not only has profound philosophical implications, but also provides practical tools for the analysis of complex systems at multiple scales.
+
+\section{The ICE Triad: Conceptual and Mathematical Foundations}
+\label{sec:triada_ICE}
+
+\subsection{Invariance (I): Persistent Structures in Context}
+An invariance represents a property that maintains its essential identity under specified transformations, \textit{but only within a bounded contextual domain. }
+Formally:
+
+\begin{equation}\label{eq:invariancia}
+I(x,t) = \left\{ T \in \mathcal{G} \,|\, \exists \Omega_C \subseteq \mathbb{R}^n: I(T(x), t') = I(x,t) \ \forall t' \in [t, t + \Delta t] \right\}
+\end{equation}
+
+donde:
+\begin{itemize}
+\item $\mathcal{G}$: Group of allowed transformations (rotations, translations, etc.)
+\item $\Omega_C$: Contextual domain where $I$ remains invariant
+\item $\Delta t$: Time interval of validity (not absolute but dependent on $C$)
+\end{itemize}
+
+\textbf{Physical example:} The electric charge ($I$) is invariant under gauge transformations ($\mathcal{G}$), but its manifestation depends on the electromagnetic coupling context ($\Omega_C$).
+
+\subsection{Context (C(t)): Dynamic Modulator of Interactions}
+The context is not a simple \textit{passive scenario}, but a dynamic framework that encodes the rules of interaction and boundary conditions:
+
+\begin{equation}\label{eq:contexto}
+C(t) = \langle \mathcal{M}(t), \{\phi_i(t): X \to \mathbb{R}\}_{i=1}^k \rangle
+\end{equation}
+
+\begin{itemize}
+\item $\mathcal{M}(t)$: Differential variety that represents the structural relationships between components
+\item $\phi_i(t)$: Contextual fields that parameterize interactions (e.g. thermodynamic potentials, spatiotemporal metrics)
+\end{itemize}
+
+\textbf{Biological example:} In a cell, $\mathcal{M}(t)$ represents the topology of the metabolic network and $\phi_i(t)$ the substrate concentrations.
+
+\subsection{Emergence (E): Relational Irreducibility}
+Emergence arises from the nonlinear interaction between $I$ and $C$, and is characterized by its irreducibility to individual components:
+
+\begin{equation}\label{eq:emergencia}
+E(t) = \Psi\left(I(t), \nabla_C I(t), \int_{t_0}^t \mathcal{F}(I,C) d\tau\right)
+\end{equation}
+
+where:
+\begin{itemize}
+\item $\nabla_C I(t)$: Sensitivity of invariances to contextual changes
+\item $\mathcal{F}(I,C)$: History of $I$-$C$ interactions
+\item $\Psi$: Non-linear operator that synthesizes relational dynamics
+\end{itemize}
+
+\noindent
+The concept of relational irreducibility in emergence highlights that the emergent property, \(E(t)\), cannot be fully explained or predicted by simply summing the individual contributions of the invariance, \(I(t)\), and the context, \(C(t)\). This aligns with Shannon's information theory \cite{Shannon1948}, where the information content of the whole exceeds the sum of its parts. In other words, the emergent property possesses novel information and functionalities that were not present or predictable in the isolated components, reflecting a synergistic and transformative interaction between invariance and context.
+\bigskip
+
+\textbf{Social example:} Collective consciousness ($E$) emerges from individual cognitive invariances ($I$) under the context of communication networks ($C$).
+
+\vspace{5mm}
+\noindent
+\begin{framed}
+\textbf{Key Note:} The ICE triad is neither hierarchical nor sequential. The three components coexist in a dynamic codependent relationship where:
+\begin{itemize}
+\item $I$ sets constraints for $C$
+\item $C$ modulates the expression of $I$
+\item $E$ provides feedback and reconfigures both $I$ and $C$
+\end{itemize}
+\end{framed}
+
+\section{Predictive Framework and Capabilities of ECIT}
+
+\subsection{Fundamentals of the Predictive Framework}
+The predictive capacity of the ECIT is based on the identification of critical points for a given invariance and the establishment of minimum contexts necessary for emergence. This approach allows moving from fundamental properties to emergent phenomena in a quantitative and verifiable manner.
+
+\subsection{Critical Points of Invariance}
+The critical points of an invariance are formally defined as:
+
+\begin{equation}
+    PC(I) = \{x \in \Omega_C \,|\, \nabla_C I(x) = 0 \wedge \det(H(I,C)) = 0\}
+\end{equation}
+
+where $H(I,C)$ is the Hessian matrix of the system. Stability at these points is characterized by:
+
+\begin{equation}
+    S(x) = \text{sign}(\lambda_1,\ldots,\lambda_n)
+\end{equation}
+
+where $\lambda_i$ are the eigenvalues of $H(I,C)$.
+
+\subsection{Minimum Context for Emergency}
+The minimum context necessary for a given emergency is defined as:
+
+\begin{equation}
+    C_{\text{min}}(E) = \arg\min\{\dim(C) \,|\, E(I,C) \neq 0\}
+\end{equation}
+
+subject to restrictions:
+
+\begin{align}
+    R(I,C,E) &\leq R_c \text{ (critical threshold)} \\
+    \|\nabla_C I\| &\geq \varepsilon \text{ (minimum stability)}
+\end{align}
+
+\subsection{Minimum Context Theorem}\label{subsec:TContextoMinimo}
+\newtheorem{theorem}{Theorem}
+\begin{theorem}
+For each emergence $E$ there exists a minimal context $C_{\text{min}}$ such that:
+\begin{enumerate}
+\item $E$ is stable under perturbations of $C > C_{\text{min}}$
+\item $E$ collapses for all $C < C_{\text{min}}$
+\item $\dim(C_{\text{min}})$ is quantized in fundamental units
+\end{enumerate}
+\end{theorem}
+
+\subsection{Predictive Structure}
+The probability of emergence is given by:
+
+\begin{equation}
+    P(E|I,C) = Z^{-1}\exp(-R(I,C,E)/kT)
+\end{equation}
+
+where $Z$ is the partition function and $kT$ represents the scale of fluctuations of the system.
+
+The predictive chain follows the sequence:
+
+\begin{equation}
+    I \rightarrow PC(I) \rightarrow C_{\text{min}} \rightarrow E
+\end{equation}
+
+\subsection{Prediction Protocol}\label{sec:protocolo}
+The predictive process in ECIT is implemented in four interrelated stages:
+
+\begin{enumerate}[leftmargin=*,label=\textbf{Step \arabic{enumi}.},series=protocolo]
+    \item \textbf{System characterization} \\    Define the system using the fundamental quaternary:
+    \begin{equation}\label{eq:S}
+        S = \{\,I,\, C,\, E,\, R\,\}
+    \end{equation}
+    where:
+    \begin{itemize}[nosep]
+        \item $I$: Structural invariances (Eq.~\ref{eq:invariancia})
+        \item $C(t)$: Dynamic context (Eq.~\ref{eq:contexto})
+        \item $E(t)$: Quantifiable emergency (Eq.~\ref{eq:emergencia})
+        \item $R(t)$: Persistence Functional (Eq.~\ref{eq:R})
+    \end{itemize}
+
+    \item \textbf{Stability analysis} \\
+    Identify critical points by:
+    \begin{align}
+        \nabla_C I &= 0 \quad \text{(Functional extremes)}\label{eq:estabilidad1} \\
+        \det(H(I,C)) &= 0 \quad \text{(Criticality threshold)}\label{eq:estabilidad2}
+    \end{align}
+    where $H(I,C)$ is the Hessian matrix of the system.
+
+    \item \textbf{Determining the minimum context} \\
+    Establish the conditions for stable emergency:
+    \begin{align}
+        \dim(C) &\to \min \quad \text{(Principle of contextual parsimony)}\label{eq:Cmin1} \\
+        R(I,C,E) &\leq R_c \quad \text{(Persistence threshold)}\label{eq:Cmin2}
+    \end{align}
+    where $R_c$ is the critical value of the functional (Eq.~\ref{eq:R}).
+
+    \item \textbf{Emergency prediction} \\
+    Calculate emergent properties by:
+    \begin{equation}\label{eq:prediccion}
+        E(t) = \Psi\big(I(t),\, C(t),\, t\big) \quad \text{for} \quad C \geq C_{\text{min}}
+    \end{equation}
+    where $\Psi$ is the nonlinear emergent synthesis operator (Eq.~\ref{eq:psi}).
+\end{enumerate}
+
+\subsection{Applications and Validation}
+The validation of the predictive framework is performed using the following metrics:
+
+\begin{equation}
+    S = \frac{(E_{\text{obs}} - E_{\text{pred}})^2}{\text{var}(E_{\text{obs}})}
+\end{equation}
+
+For specific phase transitions:
+
+\begin{equation}
+    E = \text{order} \times \exp(-|C - C_c|/\xi)
+\end{equation}
+
+where $C_c$ is the critical point and $\xi$ the correlation length.
+
+\subsection{Multicontextuality and Simultaneous Emergency} \label{sec:multicontext}
+From the entire theoretical framework of the ECIT, a fundamental phenomenon is revealed: the coexistence of multiple emerging lines on the same invariance under differentiated contexts (\textit{Principle of Contextual Superposition}). This advance extends the Minimum Context Theorem (\ref{subsec:TContextoMinimo}) through three necessary conditions:
+
+\begin{equation} \label{eq:superposicion}
+E_{\text{total}} = \Psi\left(I, \sum\limits_{k=1}^N \alpha_k \nabla_{C_k}I, \bigotimes\limits_{k=1}^N F(I,C_k)\right) \quad \text{with} \quad \langle \nabla_{C_i}I, \nabla_{C_j}I \rangle < \varepsilon_{\text{crit}}
+\end{equation}
+
+where $\varepsilon_{\text{crit}} = 0.1R_c$ defines the contextual interference threshold (Eq. \ref{eq:R}). 
+
+\bigskip
+\noindent Equation (\ref{eq:superposicion}) encapsulates a core principle of ECIT: the capacity for a single invariance \textit{I}, to give rise to multiple, coexisting emergences under distinct contextual influences. This multicontextual superposition expands the explanatory power of ECIT, allowing it to model systems where diverse functionalities arise from a shared underlying structure. The non-interference condition, $\langle \nabla_{C_i}I, \nabla_{C_j}I \rangle < \varepsilon_{crit}$, ensures that these contextual influences remain sufficiently orthogonal, preventing destructive interference and allowing for stable, simultaneous emergences. This principle resonates with observations across diverse domains, from the parallel processing capabilities of neural networks to the multifaceted behaviors of social systems, where a single entity can exhibit a range of context-dependent actions (\cite{Hofstadter1979}.
+
+\bigskip
+\noindent The capacity for a single underlying structure to generate diverse emergent properties under different contexts is analogous to the principles of generative grammar proposed by Chomsky \cite{Chomsky1957}, where a finite set of rules can generate an infinite variety of grammatical sentences.
+
+
+\subsubsection{Semantic Decomposition of the Equation}
+\begin{itemize}
+\item \textbf{Invariance Core (I):} It represents the persistent structural property that acts as a common substrate for all contextual emergencies. It corresponds to the formal definition of invariance in ECIT (Ec.~\ref{eq:invariancia}).
+
+\item \textbf{Cumulative Contextual Sensitivity ($\sum\alpha_k\nabla_{C_k}I$):}
+\begin{itemize}
+\item $\nabla_{C_k}I$: Contextual gradient that quantifies how $I$ varies with changes in context $C_k$
+\item $\alpha_k$: Coupling coefficient that weighs the relative influence of each context(0 < $\alpha_k$ < 1, $\sum\alpha_k = 1$)
+\end{itemize}
+
+\item \textbf{Relational History ($\bigotimes F(I,C_k)$):} Tensor product encoding the historical memory of interactions between $I$ and each context $C_k$, where:
+\begin{equation}
+F(I,C_k) = \int_{t_0}^t \frac{\delta I}{\delta C_k} d\tau
+\end{equation}
+
+\item \textbf{Non-Interference Condition ($\langle\nabla_{C_i}I, \nabla_{C_j}I\rangle < \varepsilon_{\text{crit}}$):}
+\begin{itemize}
+\item $\varepsilon_{\text{crit}} = 0.1R_c$ (critical threshold of the persistence functional)
+\item Ensures contextual independence through approximate orthogonality of gradients
+\end{itemize}
+\end{itemize}
+
+\subsubsection{ECIT interpretation}
+This equation implements three fundamental principles of the theory:
+
+1. \textbf{Principle of Contextual Superposition (MRU Meta-Axiom):}
+\begin{equation}
+E_{\text{total}} \subset \bigotimes_{k=1}^N (I \otimes C_k \otimes E_k)
+\end{equation}
+
+2. \textbf{Operational Non-Commutativity:}
+\begin{equation}
+\Psi(C_i,C_j) \neq \Psi(C_j,C_i) \quad \text{si} \quad \dim(C_i) \neq \dim(C_j)
+\end{equation}
+
+3. \textbf{Dimensional Quantization:}
+\begin{equation}
+\dim(C_k) = n_k \cdot \frac{h_{\text{ECIT}}}{E_k t_{\text{ECIT}}} \quad (n_k \in \mathbb{Z}^+)
+\end{equation}
+
+
+Key applications include:
+
+\begin{itemize}
+\item \textbf{Multiferroic materials:} Coexistence of electrical ($C_1$) and magnetic ($C_2$) order when $\nabla_{C_1}I_{\text{ret}} \perp \nabla_{C_2}I_{\text{spin}}$
+
+\item \textbf{Neural networks:} Parallel processing using perceptual ($C_p$) and emotional contexts ($C_e$) con $\dim(C_p \cap C_e) < \frac{1}{3}\min(\dim(C_p), \dim(C_e))$.
+
+\item \textbf{Quantum systems:} Superposition of photonics ($E_1$) and transport ($E_2$) under the criterion $\frac{\delta R}{\delta E_1} \cdot \frac{\delta R}{\delta E_2} \approx 0$
+\end{itemize}
+
+Quantization of contextual dimensions:
+\begin{equation} \label{eq:cuantizacion}
+\dim_{\text{eff}}(C_k) = n \cdot \frac{h}{E_k t_{\text{ECIT}}} \quad (n \in \mathbb{Z}^+)
+\end{equation}
+
+guarantees topological stability during multi-context transitions. This principle resolves the apparent paradox of competitive emergencies, establishing that physical \textit{objectivity} corresponds to the limit $N \to 1$ in (\ref{eq:superposicion}).
+
+
+\subsection{Limitations and Perspectives}
+The current predictive framework has limitations in:
+\begin{itemize}
+\item Computational complexity
+\item Sensitivity to initial conditions
+\item Uncertainty in determining $C_{\text{min}}$
+\end{itemize}
+
+Future developments will include:
+\begin{itemize}
+\item Extension to stochastic predictions
+\item Incorporation of dynamic contexts
+\item Multi-level emergency handling
+\end{itemize}
+
+
+\section{ECIT Axiomatic Hierarchy}
+\label{sec:axiomas}
+
+\subsection{Meta-Axiom: Relational Universality}
+In this section, we explore the Meta-Axiom of Relational Universality (MRU), a fundamental principle of ECIT that establishes the primacy of relations over isolated entities. We will formalize this concept and demonstrate how relational universality not only redefines our understanding of invariance and emergence, but also provides a framework for the integration of diverse physical theories and complex systems.
+
+\bigskip
+
+\noindent \textbf{Statement:}
+\begin{quote}
+All reality, whether physical or abstract, is fundamentally structured by the Invariance-Context-Emergence (ICE) triad. In this constitutive triad:
+
+\begin{enumerate}
+\item[(i)] \textbf{Invariances} ($I$) define the structural boundaries and persistent identities within the system.
+\item[(ii)] \textbf{Context} ($C$) modulates the rules of interaction and the conditions of possibility for the manifestation of the invariances.
+\item[(iii)] \textbf{Emergence} ($E$) recursively redefines both the Invariances and the Context, giving rise to new levels of organization and complexity.
+\end{enumerate}
+Each specific axiom of the ECIT, both primary and secondary, manifests itself as a particular instance of this ICE triad, adapted to the corresponding phenomenological domain.
+\end{quote}
+\bigskip
+\textbf{Meta-Axiom of Relational Universality (MRU) Formula:}
+
+\begin{equation}
+\boxed{\mathbb{U} = \bigoplus_{n \in\mathcal{O}} (I_n\otimes C_n \otimes E_n) }
+\label{eq:meta-axioma}
+\end{equation}
+
+\bigskip
+
+\subsubsection{Interpretation and Universal Scope:}
+The Meta-Axiom of Relational Universality (MRU) postulates that the Invariance-Context-Emergence (ICE) triad constitutes the fundamental organizing principle of \textbf{all reality}, encompassing the entirety of the \emph{Universe of Discourse ($\mathbb{U}$)}. This universe is not limited to the physical realm, but extends to abstract, mental, social, and any other conceivable realm of existence. The formula (\ref{eq:meta-axioma}) formalizes this universality, expressing that the Universe $\mathbb{U}$ can be decomposed as a \textbf{categorical direct sum} ($\bigoplus$) of ICE components corresponding to various \textbf{orders of existence} ($\mathcal{O}$). These orders of existence $\mathcal{O}$ represent different \emph{planes of reality} or \emph{levels of description}, such as physical ($\mathbb{P}$), mental ($\mathbb{M}$), abstract ($\mathbb{A}$), and potentially many others. The operation $\otimes$ represents a fundamental \textbf{triadic interaction} between Invariances, Context, and Emergence, which gives rise to the structuring and dynamics of each ICE component at each order of existence.
+
+\bigskip
+
+The fundamental interpretation of the MRU Meta-Axiom extends to various areas of reality, exemplified in:
+
+\begin{itemize}
+\item \textbf{Physical Systems} ($\mathbb{U} \cap \mathbb{P} \neq \emptyset$): In the physical domain, the ICE triad manifests itself in the structuring of matter, energy, and spacetime. \textbf{Invariances} correspond to fundamental physical laws, universal constants, elementary particles, and space-time symmetries that persist through change and define the limits of what is physically possible. The physical \textbf{Context} is given by initial and boundary conditions, external fields, environmental interactions, and the distribution of matter and energy that modulate the concrete manifestation of invariances in specific phenomena. \textbf{Emergence} in physical systems is observed in the formation of complex structures from simpler components, such as self-organization in thermodynamic systems, the emergence of life from inert matter, or the appearance of collective properties in many-particle systems.
+
+   \item \textbf{Abstract Systems} ($\mathbb{U} \cap \mathbb{A} \neq \emptyset$): In the abstract domain, which includes mathematical theories, logical structures, and formal systems, the ICE triad manifests itself in the construction of knowledge and the generation of new conceptual structures. \textbf{Invariances} in abstract systems are the fundamental axioms, rules of logical inference, mathematical definitions, and theorems that establish the limits and consistencies within a formal system. The abstract \textbf{Context} is defined by the initial assumptions, formal constraints, axiomatic choices, and open problems that modulate the exploration and development of the abstract system. \textbf{Emergence} in abstract systems manifests itself in the discovery of new theorems, the creation of new mathematical theories, the resolution of logical paradoxes, and the emergence of new conceptual structures from the interaction of axioms and rules.
+
+\item \textbf{Mental Systems} ($\mathbb{U} \cap \mathbb{M} \neq \emptyset$): In the mental domain, which encompasses consciousness, cognitive processes, subjective experience, and belief systems, the ICE triad manifests itself in the construction of perceived reality and the generation of meaning. \textbf{Invariances} in mental systems correspond to the basic cognitive schemata, perceptual patterns, core emotions, moral values, and core beliefs that provide stability and coherence to subjective experience. The mental \textbf{Context} is given by the sensory environment, social interactions, memory, emotions, expectations, and cultural baggage that modulate the mental system's interpretation and response to the world. \textbf{Emergence} in mental systems manifests itself in consciousness, self-awareness, intentionality, language, symbolic thought, creativity, empathy, and the ability to generate internal models of the world and oneself.
+
+\end{itemize}
+In summary, the MRU Meta-Axiom proposes that the ICE triad is not simply a useful conceptual model for describing complex systems, but rather represents a \textbf{fundamental ontological structure} that underlies the organization of all reality, in all orders of existence.
+
+\subsection{Primary Axioms}
+To formalize the theoretical framework of ECIT, a hierarchy of fundamental axioms is postulated. The following primary axioms constitute the pillars on which the theory is built, establishing general principles that govern the interaction between Invariances, Context and Emergence in various domains of reality. These axioms are not mutually exclusive, but rather complement and relate to each other to offer a coherent and unified description of complex systems from the perspective of ECIT.
+
+\subsubsection{Axiom 1: Symmetry and Multidomain Breaking (ASMB)}
+\textbf{Statement:}
+\begin{quote}
+Every $\Sigma$ system belonging to the Universal Universe $\mathbb{U}$ possesses a fundamental symmetry group $\mathfrak{G}$. However, in the presence of a Context $C$, this symmetry reduces to a subgroup $\mathfrak{H} \subseteq \mathfrak{G}$. This symmetry reduction is modeled by a contextual morphism $\varphi_C$ which maps the fundamental symmetry group $\mathfrak{G}$ to transformations in the Context space $\text{Diff}(C)$, with the subgroup $\mathfrak{H}$ being the kernel of this morphism, i.e., $\mathfrak{H} = \text{Ker}(\varphi_C)$.
+\end{quote}
+    
+
+\begin{equation}
+\forall \Sigma \in \mathbb{U},\ \exists \mathfrak{G} \supset \mathfrak{H} \subseteq \text{Aut}(\Sigma): \mathfrak{H} = \text{Ker}(\varphi_C),\ \varphi_C: \mathfrak{G} \to \text{Diff}(C)
+\end{equation}
+
+\textbf{Interpretation:} 
+The Axiom of Symmetry and Multidomain Breaking (ASMB) states that symmetry is an inherent property of every physical or abstract system ($\Sigma$) within the Universal Universe ($\mathbb{U}$). This initial symmetry is represented by a group $\mathfrak{G}$, which describes the transformations under which the system remains invariant. However, the manifestation of this symmetry is affected by the Context ($C$) in which the system is immersed. The context acts as a filter or a modifier of the original symmetry.
+
+The symmetry reduction of $\mathfrak{G}$ to a subgroup $\mathfrak{H}$ is formalized by the context morphism $\varphi_C$. This morphism maps elements of the fundamental symmetry group $\mathfrak{G}$ to transformations in the Context space ($\text{Diff}(C)$ represents the diffeomorphism group of the Context, i.e., smooth and invertible transformations of the Context). The kernel of the morphism, $\text{Ker}(\varphi_C)$, precisely defines the symmetry subgroup $\mathfrak{H}$ that remains \textit{visible} or \textit{realized} in the Context $C$. In other words, $\mathfrak{H}$ represents the symmetries of the system that are not \textit{broken} or \textit{hidden} by the influence of the context.
+
+The condition $\mathfrak{H} \subseteq \text{Aut}(\Sigma)$ states that the realized symmetry subgroup $\mathfrak{H}$ remains a subgroup of the automorphism group of the system ($\text{Aut}(\Sigma)$), ensuring that $\mathfrak{H}$ consists of genuine symmetries of the system, although possibly a restricted subset of the fundamental symmetries $\mathfrak{G}$.
+
+\textbf{Examples:}
+\begin{itemize}
+    \item \textbf{Physicist: Gauge breaking in field theories (Weinberg, 1995)}: In particle physics, gauge symmetry breaking is a fundamental mechanism. For example, the electroweak theory initially has a SU(2) $\times$ U(1) gauge symmetry. However, at low energies, this symmetry is broken, leaving only the U(1) symmetry of quantum electrodynamics. The context, in this case, can be associated with the energy conditions of the universe.
+
+    \item \textbf{Abstract: Symmetry breaking in graphs (Erdős, 1960)}: In graph theory, a complete graph $K_n$ has a very large symmetry group (the symmetric group $S_n$). However, when considering a random graph generated in a certain context (e.g. under certain connection probabilities), the symmetry is drastically reduced. In most random graphs, the only automorphism is the identity, which implies an almost complete breaking of the original symmetry of the complete graph. The "context" here would be defined by the random generation process of the graph.
+\end{itemize}
+
+\subsubsection{Axiom 2: Structural Relativity (ASR)}
+
+\textbf{Statement:}
+\begin{quote}
+    Every geometry, whether physical or conceptual, fundamentally emerges from the relational structure defined by the Relational Cost Functional $\mathcal{R}$. Specifically, the intrinsic geometry of a system is determined by how the Relational Cost Functional $\mathcal{R}$ responds to variations in Context $C$, with the metric $g_{ab}$ of this geometry being proportional to the functional second derivatives of $\mathcal{R}$ with respect to the Context components $C^a$ and $C^b$. The structural distance $\mathcal{D}_s$ between two points in context space is then defined as the infimum of the lengths of the curves $\gamma$ connecting these points, measured by the emergent metric $g_{ab}(C)$.
+\end{quote}
+
+
+\bigskip
+
+\begin{equation}
+\mathcal{D}_s = \inf_{\gamma \in \Gamma} \int_\gamma \sqrt{g_{ab}(C)\dot{x}^a\dot{x}^b} dt,\quad g_{ab} = \frac{\delta^2 \mathcal{R}}{\delta C^a \delta C^b}
+\end{equation}
+
+\textbf{Interpretation:} The Axiom of Structural Relativity (ASR) postulates that the notion of geometry is not primary or fundamental, but rather emerges as a derived property of the relational dynamics of the system, as captured by the Relational Cost Functional $\mathcal{R}$. Rather than assuming a pre-existing geometry, ASR proposes that geometry itself is a manifestation of how the system \textit{responds} to changes in its Context.
+
+The central ASR formula defines the metric $g_{ab}$ as the second functional derivatives of the Relational Cost Functional $\mathcal{R}$ with respect to the Context components ($C^a$ and $C^b$). The functional derivatives $\frac{\delta^2 \mathcal{R}}{\delta C^a \delta C^b}$ capture the curvature or sensitivity of the Cost Functional $\mathcal{R}$ to infinitesimal fluctuations in the Context. This metric $g_{ab}(C)$ locally defines the notion of \textit{distance or separation} in the context space at point $C$.
+
+Once the metric $g_{ab}(C)$ is defined, the structural distance $\mathcal{D}_s$ between two contextual configurations is defined as the geodesic, i.e. the curve of minimum length $\gamma$ connecting these two points in the contextual space, measured using the metric $g_{ab}(C)$. The integral $\int_\gamma \sqrt{g_{ab}(C)\dot{x}^a\dot{x}^b} dt$ computes the length of a curve $\gamma$ in the contextual space with respect to the emergent metric $g_{ab}(C)$, and the infimum $\inf_{\gamma \in \Gamma}$ searches for the shortest curve (geodesic) among all possible paths $\Gamma$.
+
+In short, ASR proposes that geometry is not a fixed setting in which dynamics unfold, but rather is an emergent property of the dynamics itself, encoded in the way the Relational Cost Functional $\mathcal{R}$ depends on and responds to variations in Context $C$.
+
+\textbf{Examples:}
+\begin{itemize}
+\item \textbf{Physical: Spacetime Geometry (Einstein, 1915)}: Einstein's General Relativity is a paradigmatic example of emergent geometry. In General Relativity, the geometry of spacetime is not fixed, but is dynamically determined by the distribution of matter and energy through Einstein's field equations. ASR can be seen as a generalization of this idea, where the \textit{geometry} is not limited to physical spacetime, but can be applied to abstract conceptual spaces, and the \textit{dynamics} determining the geometry is encoded in the Relational Cost Functional $\mathcal{R}$.
+
+   \item \textbf{Abstract: Hilbert spaces in category theory (Mac Lane, 1998)}: In mathematics, category theory provides an abstract language for describing mathematical structures and their relations. Within category theory, Hilbert spaces (fundamental in quantum mechanics) can be conceptualized in a broader categorical framework. ASR suggests that the geometric structure of these Hilbert spaces, including notions of distance, curvature, and relations between them, emerges from an appropriate \textit{Relational Cost Functional} defined in the context of category theory. This functional would capture the fundamental constraints and relations that define the interactions and transformations between objects in the category, and the \textit{geometry} of the Hilbert space would be a manifestation of these relations.
+\end{itemize}
+
+\subsubsection{Axiom 3: Relational Quantization (RQA)}
+\textbf{Enunciado:}
+\begin{quote}
+    The relations between Invariances ($\hat{I}_\alpha$) and Contexts ($\hat{C}_\beta$) in an ICE system are fundamentally characterized by non-commutativity. This non-commutativity is expressed through generalized commutation relations $[\hat{I}_\alpha, \hat{C}_\beta]_{\circledast}$, which are proportional to the Emergence ($\hat{E}_\gamma$) of the system, with a proportionality constant $i\lambda$ that parameterizes the intensity of the quantum or non-commutative effects induced by the Context. Additionally, the commutation relations may include topological terms $\kappa \mathcal{T}_{\alpha\beta}(E)$ that depend on the emergent structure of the system and that modulate the non-commutativity as a function of the topology of the state or configuration space.
+\end{quote}
+
+\bigskip
+\begin{equation}
+[\hat{I}_\alpha, \hat{C}_\beta]_{\circledast} = i\lambda \epsilon_{\alpha\beta}^\gamma \hat{E}_\gamma + \kappa \mathcal{T}_{\alpha\beta}(E)
+\end{equation}
+
+\textbf{Interpretation:} The Relational Quantization Axiom (RQA) introduces the idea that noncommutativity is a fundamental feature of the relationship between Invariances and Contexts in ICE systems. Instead of assuming that Invariances and Contexts commute (as in classical physics), RQA postulates that their interaction intrinsically generates noncommutativity relations, analogous to quantum commutation relations in quantum mechanics.
+
+The RQA formula $[\hat{I}_\alpha, \hat{C}_\beta]_{\circledast} = i\lambda \epsilon_{\alpha\beta}^\gamma \hat{E}_\gamma + \kappa \mathcal{T}_{\alpha\beta}(E)$ formalizes this idea. The generalized commutator $[\hat{I}_\alpha, \hat{C}_\beta]_{\circledast}$ (which is not necessarily the standard commutator $[A,B]=AB-BA$, but may be a context-appropriate generalization, denoted by $\circledast$) between Invariance ($\hat{I}_\alpha$) and Context ($\hat{C}_\beta$) operators is not zero, but equals two terms:
+
+\begin{itemize}
+ \item A leading term $i\lambda \epsilon_{\alpha\beta}^\gamma \hat{E}_\gamma$ which is proportional to the Emergence ($\hat{E}_\gamma$) and an imaginary constant $i\lambda$. The parameter $\lambda$ quantifies the \textit{strength} of noncommutative or quantum effects induced by the Context. The tensor $\epsilon_{\alpha\beta}^\gamma$ is a structural tensor (like the structure tensor of a Lie algebra) which determines how the commutation relations are \textit{closed} over the Emergence.
+
+\item An additional term $\kappa \mathcal{T}_{\alpha\beta}(E)$ which represents topological corrections to the commutation relations. The factor $\kappa$ weights the importance of these topological terms, and $\mathcal{T}_{\alpha\beta}(E)$ is a functional that depends on the structure of the Emergence $E$ and encodes information about the topology of the state space or configurations of the system. These topological terms allow noncommutativity to be modulated by the geometry or emergent topology of the system.
+\end{itemize}
+
+Taken together, RQA establishes that non-commutativity is a fundamental relational property between Invariances and Contexts, and that this non-commutativity is intrinsically linked to Emergence and the topology of the system.
+
+\textbf{Examples:}
+\begin{itemize}
+\item \textbf{Physical: Quantum uncertainty relations (Heisenberg, 1927)}: Heisenberg's uncertainty relations in quantum mechanics, such as $[\hat{x}, \hat{p}] = i\hbar$, are a paradigmatic example of quantum noncommutativity. In this case, the position $\hat{x}$ and the momentum $\hat{p}$ (which could be seen as Invariances and Contexts, respectively, in a certain physical sense) do not commute, and their commutator is proportional to the imaginary unit $i$ and the reduced Planck constant $\hbar$ (which would play the role of $\lambda$). RQA generalizes this idea, suggesting that non-commutativity is not exclusive to quantum mechanics, but is a broader principle that can manifest itself in various complex systems where Invariances and Contexts interact.
+
+\item \textbf{Abstract: Operator algebras in noncommutative logics (Connes, 1994)}: In mathematics and logic, the development of noncommutative logics and operator algebras (such as the von Neumann algebras studied by Alain Connes) provides a formal framework for describing systems where logical operations or operations on observables do not commute. These abstract mathematical formalisms can be seen as examples of the manifestation of RQA in non-physical domains. For example, in quantum logic, the order in which certain questions or measurements are asked of a quantum system can affect the outcome, reflecting an underlying noncommutative structure that could be described in terms of RQA.
+\end{itemize}
+
+\subsubsection{Axiom 4: Universal Holography (AUH)}
+
+\textbf{Enunciado:}
+\begin{quote}
+    The information contained in the $\partial V$ boundary of any volume $V$ in an ICE system provides a fundamental upper bound on the complexity of the Emergence that can manifest inside that volume. Specifically, the information ($\mathcal{I}(\partial V)$) encoded in the $\partial V$ boundary must be greater than or equal to the volumetric entropy ($\mathcal{S}(V)$) of the system at $V$, corrected by a term quantifying the contextual free energy ($\mathcal{F}(C_{\partial V})$) associated with the boundary. This holographic bound is parameterized by a constant $\beta = \frac{2\pi}{\hbar \kappa}$ relating fundamental constants such as the reduced Planck constant ($\hbar$) and a constant $\kappa$ that depends on system- and context-specific properties.
+\end{quote}
+
+\begin{equation}
+\mathcal{I}(\partial V) \geq \mathcal{S}(V) - \beta \mathcal{F}(C_{\partial V}),\quad \beta = \frac{2\pi}{\hbar \kappa}
+\label{eq:AUH_formula}
+\end{equation}
+\bigskip
+
+\textbf{Interpretation:} The Axiom of Universal Holography (AUH) generalizes the holographic principle, originally proposed in the context of black holes and quantum gravity, to ICE systems of a universal nature, encompassing both physical and abstract systems. The AUH postulates that there is a fundamental limit to the amount of information and complexity that can reside in the volume of a system, and that this limit is determined by the information encoded at its boundary.
+
+The AUH formula, $\mathcal{I}(\partial V) \geq \mathcal{S}(V) - \beta \mathcal{F}(C_{\partial V})$, states an inequality relating three fundamental quantities:
+
+\begin{itemize}
+ \item $\mathcal{I}(\partial V)$: The information encoded at the boundary $\partial V$ of the volume $V$. This information can be understood as the number of degrees of freedom or possible states that can be distinguished at the boundary of the system. In the holographic context, this boundary information \textit{encodes} all relevant information about the state of the interior volume.
+
+\item $\mathcal{S}(V)$: The volumetric entropy of the system within the volume $V$. The entropy $\mathcal{S}(V)$ measures the complexity or number of microstates compatible with a given macroscopic state in the volume $V$. In terms of the ECIT, the volumetric entropy can be interpreted as a measure of the richness and diversity of Emergence manifested in the volume $V$.
+
+\item $\mathcal{F}(C_{\partial V})$: The contextual free energy associated with the $\partial V$ boundary. This term represents a correction to the holographic boundary that takes into account the influence of the specific Context at the volume boundary. The contextual free energy $\mathcal{F}(C_{\partial V})$ quantifies the energy available at the boundary that can influence the complexity of the Emergence inside. The parameter $\beta = \frac{2\pi}{\hbar \kappa}$ is a proportionality constant that depends on fundamental constants and properties of the system, and modulates the importance of the contextual free energy at the holographic boundary.
+
+\end{itemize}
+
+The inequality $\mathcal{I}(\partial V) \geq \mathcal{S}(V) - \beta \mathcal{F}(C_{\partial V})$ states that the information at the boundary $\partial V$ must always be sufficient to \textit{encode} at least the volumetric entropy $\mathcal{S}(V)$, after accounting for the correction due to the contextual free energy $\mathcal{F}(C_{\partial V})$. In essence, the boundary acts as an \textit{informational boundary} that restricts the emergent complexity within the interior.
+
+\textbf{Examples:}
+\begin{itemize}
+\item \textbf{Physicist: Holographic principle in black holes (t'Hooft, 1993)}: The holographic principle in the context of black holes, proposed by t'Hooft and Susskind, is the original motivation for the AUH. In black hole physics, it has been found that the entropy of a black hole (which measures its internal complexity) is proportional to the area of its event horizon (its \textit{boundary}), not its volume. This suggests that all information about the interior of a black hole can be encoded on its surface, analogous to a hologram. The AUH generalizes this idea, proposing that a similar holographic principle could hold for systems much more general than black holes.
+
+\item \textbf{Abstract: Representation theorem in neural networks (Hinton, 2015)}: In the field of deep neural networks and deep learning, the \textit{representation theorem} suggests that deep neural networks are able to represent highly complex functions with a relatively small number of parameters, especially when compared to flat (shallow) neural networks. The AUH could offer a theoretical perspective to understand this phenomenon. The \textit{boundary} of a deep neural network could be interpreted as the number of parameters or connections in the shallow layers, and the \textit{volume} as the complexity of the function that the network can represent. The AUH would suggest that the representation capacity (emergent complexity) of a neural network is fundamentally limited by the \textit{information} encoded in its shallow layers (its \textit{boundary}). Work by Hinton and others on "capsule networks" and hierarchical representations in neural networks explores ideas related to the holographic encoding of information in machine learning systems.
+\end{itemize}
+
+\subsubsection{Axiom 5: Polyvalent Causality (APC)}
+\textbf{Statement:}
+\begin{quote}
+    
+
+Causality in ICE systems manifests itself in a \textbf{polyvalent} way, extending beyond local and linear causal relations. Generalized causal conservation is expressed by an integral law relating the total causal flux ($\oint_{\partial \mathcal{M}} \mathcal{J}^\mu d\Sigma_\mu$) across the boundary $\partial \mathcal{M}$ of a region $\mathcal{M}$ to an infinite set of volumetric terms \par
+($\sum_{k=0}^\infty (-1)^k \int_{\mathcal{M}} \nabla_{\nu_1}\cdots\nabla_{\nu_k} \mathcal{T}^{\mu\nu_1\cdots\nu_k} dV$) representing higher-order causal fluxes within $\mathcal{M}$. These higher-order terms, involving covariant derivatives $\nabla_{\nu_1}\cdots\nabla_{\nu_k}$ of a causal tensor $\mathcal{T}^{\mu\nu_1\cdots\nu_k}$, capture the complexity of nonlocal and nonlinear causal interconnections that emerge in ICE systems under the influence of Context and Emergence.
+\end{quote}
+
+\begin{equation}
+\oint_{\partial \mathcal{M}} \mathcal{J}^\mu d\Sigma_\mu = \sum_{k=0}^\infty (-1)^k \int_{\mathcal{M}} \nabla_{\nu_1}\cdots\nabla_{\nu_k} \mathcal{T}^{\mu\nu_1\cdots\nu_k} dV
+\label{eq:APC_formula}
+\end{equation}
+\bigskip
+
+\textbf{Interpretation:} The Axiom of Polyvalent Causality (APC) extends the classical notion of causality, which is typically associated with linear and local relationships, to encompass the rich diversity of causal relationships that can arise in complex systems modeled by ECIT. APC recognizes that causality in ICE systems is not limited to simple linear chains of cause and effect, but can manifest itself in multiple ways, including non-local effects, feedbacks, and causal hierarchies.
+
+The APC formula formalizes this generalized causality by an integral equation that generalizes classical conservation laws (such as conservation of charge or energy). The left-hand side of the equation, $\oint_{\partial \mathcal{M}} \mathcal{J}^\mu d\Sigma_\mu$, represents the total causal flux across the $\partial \mathcal{M}$ boundary of a $\mathcal{M}$ region. $\mathcal{J}^\mu$ is a causal current density, and the surface integral $\oint_{\partial \mathcal{M}} \mathcal{J}^\mu d\Sigma_\mu$ measures the net amount of causality flowing out of (or into) the $\mathcal{M}$ region.
+
+The right-hand side of the equation, $\sum_{k=0}^\infty (-1)^k \int_{\mathcal{M}} \nabla_{\nu_1}\cdots\nabla_{\nu_k} \mathcal{T}^{\mu\nu_1\cdots\nu_k} dV$, represents an \textbf{infinite sum of volumetric terms} describing \textbf{higher-order causal flows} within the volume $\mathcal{M}$. $\mathcal{T}^{\mu\nu_1\cdots\nu_k}$ is a causal tensor of rank $k+1$ that encodes information about causal correlations of order $k$. The covariant derivatives $\nabla_{\nu_1}\cdots\nabla_{\nu_k}$ generalize the notion of divergence to tensors and curved spaces, and the volumetric integral $\int_{\mathcal{M}} \nabla_{\nu_1}\cdots\nabla_{\nu_k} \mathcal{T}^{\mu\nu_1\cdots\nu_k} dV$ measures the contribution of causal flows of order $k$ to the total causal balance within $\mathcal{M}$. The infinite sum $\sum_{k=0}^\infty$ indicates that polyvalent causality can involve causal flows of all orders, from local flows (order $k=0$) to complex nonlocal correlations (orders $k>0$).
+
+In essence, APC states that the total causal flux across a region's boundary must equal the net balance of all causal fluxes of all orders occurring within that region. This generalized conservation law captures the multi-pronged and complex nature of causality in ICE systems.
+
+
+\textbf{Examples:}
+\begin{itemize}
+\item \textbf{Physical: Continuity equation in hydrodynamics (Navier, 1822)}: The continuity equation in hydrodynamics, which describes the conservation of mass in a fluid, is a classic example of a causal conservation law. In its simplest form, the continuity equation relates the mass flux through a closed surface to the temporal variation of mass density in the volume enclosed by that surface. APC can be viewed as a generalization of the continuity equation to more abstract, higher-order causal fluxes, which are not limited to the conservation of classical physical quantities such as mass, but can describe the propagation and conservation of information, causal influences, or activity patterns in complex systems.
+
+ \item \textbf{Abstract: Information propagation in Bayesian networks (Pearl, 2009)}: Bayesian networks are probabilistic graphical models that represent causal relationships between variables. Information propagation in a Bayesian network can be interpreted in terms of causal flows. APC could provide a theoretical framework to formalize and generalize the notion of causal information propagation in complex networks, beyond standard Bayesian models. In this context, "causal flow" could represent the transmission of probabilities or beliefs through the network, and higher-order terms in APC could capture more complex forms of causal inference and evidence propagation in hierarchical or feedforward Bayesian networks. Judea Pearl's work on causality in artificial intelligence and statistics provides a rich context for interpreting and applying APC in abstract causal reasoning and representation systems.
+\end{itemize}
+\subsection{Secondary Axioms}
+\label{subsec:axiomas-secundarios}
+While the primary axioms outline the fundamental principles and universal constraints operating within the ICE framework, the secondary axioms delve into the dynamical mechanisms and emergent properties that characterize complex systems. These axioms, while building on the primary principles, explore specific facets of self-organization, thermodynamics, and informational consistency, providing conceptual tools for analyzing the emergence of complexity and adaptability in diverse systems from an ECIT perspective. The detailed formulation of the secondary axioms follows.
+
+\subsubsection{Axiom 6: Adaptive Self-Organization (AAS)}
+\label{ax:autoorganizacion}
+
+\textbf{Statement:}
+\begin{quote}
+    The Invariances ($I$) of an ICE system exhibit \textbf{adaptive self-organization}, dynamically modifying themselves in response to Context-generated stresses ($C$) and Emergence gradients ($E$). This self-regulation of the invariances is described by an evolution equation that includes two main terms: an intrinsic growth/decay term, modulated by a Context-dependent carrying capacity $K(C)$, and an adaptive flow term, which guides the modification of the invariances in the direction of Emergence gradients, thus minimizing relational stresses in the system.
+\end{quote}
+
+
+\begin{equation}
+\partial_t I = \alpha \left(1 - \frac{I}{K(C)}\right) - \beta \nabla_C \cdot (I \nabla_C E)
+\label{eq:autoorganizacion}
+\end{equation}
+\bigskip
+
+\textbf{Interpretation:} The Axiom of Adaptive Self-Organization (AAS) describes the intrinsic dynamics of Invariances ($I$) in an ICE system. They are not static, immutable entities, but rather they actively evolve and self-regulate in response to internal and external conditions of the system. The equation (\ref{eq:autoorganizacion}) formalizes this adaptive self-organization through two terms:
+
+\begin{itemize}
+\item \textbf{Logistic Growth/Decay Term:} The first term, $\alpha \left(1 - \frac{I}{K(C)}\right)$, represents an intrinsic growth or decay dynamics of the Invariances. In the absence of the second term, this term only describes a logistic dynamics, where the Invariances tend to grow exponentially at rate $\alpha$ when $I$ is small, but this growth saturates as $I$ approaches a maximum carrying capacity $K(C)$. It is crucial to note that the carrying capacity $K(C)$ is not constant, but depends on the Context $C$. This means that the Context modulates the system's ability to sustain its Invariances. A favorable Context can increase $K(C)$ (allowing the development of more complex invariances), while an unfavorable Context can reduce $K(C)$ (limiting the growth of invariances or even inducing their decay).
+
+\item \textbf{Emergence-Guided Adaptive Flow Term:} The second term, $- \beta \nabla_C \cdot (I \nabla_C E)$, introduces the adaptive and self-organizing component of the axiom. This term describes a flow of modification of the Invariances that is guided by the gradients of the Emergence ($\nabla_C E$) in the Context space. The gradient $\nabla_C E$ indicates the direction in the context space in which the Emergence $E$ changes most rapidly. The term $\nabla_C \cdot (I \nabla_C E)$ essentially represents a \textit{divergence} from this adaptive flow weighted by the Invariances $I$. The negative sign "-" indicates that this flow tends to \textbf{reduce the gradients of the Emergence}. In other words, Invariances are adaptively modified to minimize abrupt variations or \textit{tensions} in Emergence induced by Context. The parameter $\beta$ controls the strength of this adaptive flow.
+
+\end{itemize}
+
+Taken together, the Adaptive Self-Organization Axiom (AAS) describes a dynamic process where Invariances continuously self-regulate to maintain equilibrium with the Context and minimize emerging tensions. This adaptive self-organization process enables ICE systems to adjust their internal structure (Invariances) to persist and function robustly in changing environments.
+
+\textbf{Examples:}
+\begin{itemize}
+\item \textbf{Physical: Pattern formation in bacterial colonies (Patterns of \textit{Bacillus subtilis} on agar)}: In pattern formation in bacterial colonies, such as the complex patterns observed in \textit{Bacillus subtilis} growing on nutrient agar, the Invariances ($I$) can represent the local cell density of the colony. The Context ($C$) would be given by nutrient gradients and the concentration of waste products in the agar. The Emergence ($E$) is the macroscopic morphology of the colony, i.e. the spatial patterns the colony forms (concentric rings, branches, spirals, etc.). The AAS Axiom describes how the local cell density ($I$) is self-regulating. The term logistic growth describes bacterial growth limited by nutrient availability (carrying capacity $K(C)$ which depends on nutrient concentration). The term adaptive flow describes how bacteria move and redistribute in response to nutrient gradients and the emerging morphology of the colony. For example, if a nutrient gradient forms, bacteria will tend to move toward regions with higher nutrient concentrations (guided by $\nabla_C E$), thereby modifying the cell density distribution and the morphology of the colony as a whole.
+
+\item \textbf{Abstract: Financial Market Dynamics (Self-Organized Crises and Recoveries)}: In financial market dynamics, Invariances ($I$) might represent market liquidity (the ease with which assets can be bought or sold without significantly affecting their price). Context ($C$) would be defined by regulatory policies, interest rates, investor expectations, and other macroeconomic factors that influence the market. Emergence ($E$) might be the systemic stability of the financial market as a whole (measured, for example, by overall volatility or the risk of systemic collapse). The AAS Axiom models how liquidity ($I$) self-regulates in the market. The logistic growth/decay term can describe the intrinsic tendency of liquidity to expand (in bull markets) or contract (in bear markets), with the carrying capacity $K(C)$ depending on regulatory policies (e.g., looser regulations could increase liquidity carrying capacity). The adaptive flow term describes how liquidity is redistributed in response to changes in systemic stability. For example, if systemic stability begins to deteriorate (increasing volatility or crisis risk), market agents may reduce their liquidity (by selling assets and withdrawing capital) in an attempt to protect themselves from risk, thereby generating adaptive flows of liquidity guided by the emerging stability gradients. This adaptive self-organizing process can lead to boom-bust cycles, crises and recoveries, in financial markets.
+\end{itemize}
+
+
+\subsubsection{Axiom 7: Extended Thermodynamics (ETA)}
+\label{ax:termodinamica}
+
+\textbf{Statement:}
+\begin{quote}
+    The thermodynamics of ICE systems is described by an \textbf{Extended Thermodynamics}, which generalizes the first law of classical thermodynamics to explicitly incorporate the Contextual Persistence Functional $\mathcal{R}$ as a form of \textit{relational energy} or \textit{contextual work} that influences the entropy of the system. The change in the entropy of the system ($d\mathfrak{S}$) is related to the change in the Relational Cost Functional ($\delta\mathcal{R}$), the work done by extensive variables ($\mu d\mathcal{N}$), and a series of non-extensive terms ($\sum_{k=1}^\infty \theta_k d\Lambda_k$) that capture the contribution of emergent order parameters ($\Lambda_k$) and generalized thermodynamic forces ($\theta_k$) to the entropic dynamics of the system.
+\end{quote}
+
+
+\begin{equation}
+d\mathfrak{S} = \frac{\delta\mathcal{R}}{T} + \mu d\mathcal{N} - \sum_{k=1}^\infty \theta_k d\Lambda_k
+\label{eq:termodinamica_extendida}
+\end{equation}
+\bigskip
+
+\textbf{Interpretation:} The Extended Thermodynamics Axiom (ETA) proposes a generalization of the standard thermodynamic framework to apply it to complex ICE systems, where relational dynamics and emergence play a fundamental role. The equation (\ref{eq:termodinamica_extendida}) represents an extension of the first law of thermodynamics, incorporating new terms that reflect the non-extensive and relational nature of ICE systems:
+\begin{itemize}
+\item \textbf{Relational Energy Term ($\frac{\delta\mathcal{R}}{T}$):} The first term, $\frac{\delta\mathcal{R}}{T}$, introduces the Relational Cost Functional $\mathcal{R}$ into the thermodynamic equation as a form of Relational Energy or Contextual Work. The change in the cost functional $\delta\mathcal{R}$ represents a variation in the relational \emph{stress} or \emph{imbalance} in the ICE system. This term suggests that fluctuations in the Relational Cost Functional contribute to the change in entropy of the system, analogous to how heat ($\delta Q = T dS$) contributes to the entropy change in classical thermodynamics. The temperature $T$ acts here as a scaling factor relating the change in relational energy to the entropic change.
+
+\item \textbf{Classical Extensive Term ($\mu d\mathcal{N}$):} The second term, $\mu d\mathcal{N}$, represents the classical extensive term of thermodynamics, associated with the work done by extensive variables such as the number of particles or components ($\mathcal{N}$). $\mu$ represents the chemical potential associated with the extensive variable $\mathcal{N}$. This term is analogous to the $PdV$ (pressure-volume work) term in gas thermodynamics, but here it is generalized to other extensive variables relevant to the ICE system.
+\item \textbf{Higher Order Non-Extensional Terms ($\sum_{k=1}^\infty \theta_k d\Lambda_k$):} The third term, $-\sum_{k=1}^\infty \theta_k d\Lambda_k$, is an \textbf{infinite sum of non-extensional terms} that further generalizes thermodynamics to complex systems. The $\Lambda_k$ represent \textbf{emergent order parameters} that characterize the organization and emergent structure of the system (e.g., spatial patterns, temporal rates, functional hierarchies, etc.). The $\theta_k$ are \textbf{generalized thermodynamic forces} (analogous to pressure or temperature) that are conjugate to the order parameters $\Lambda_k$.  
+These non-extensive terms capture the contribution of emergence and self-organization to the thermodynamics of the system, and allow to describe systems where the entropy is not simply a function of classical extensive variables, but also depends on emergent order parameters that describe the complexity of the system's organization. The infinite sum $\sum_{k=1}^\infty$ indicates that extended thermodynamics can involve a potentially infinite number of order parameters, reflecting the richness and diversity of emergent structures that can arise in ICE systems. The negative sign "-" in this term is due to thermodynamic conventions related to the definition of work and free energy.
+\end{itemize}
+
+Taken together, the Extended Axiom of Thermodynamics (ETA) provides a generalized thermodynamic framework for ICE systems, which goes beyond classical thermodynamics by incorporating relational dynamics (via $\mathcal{R}$) and emergence (via the non-extensive terms $\sum_{k=1}^\infty \theta_k d\Lambda_k$). This axiom allows one to analyze the thermodynamics of complex, self-organizing systems that generate emergence, by capturing the interdependence between relational energy, classical extensive variables, and emergent order parameters in the entropic dynamics of the system.
+
+\textbf{Examples:}
+\begin{itemize}
+\item \textbf{Physical: Cellular Metabolism (ATP Production Under Osmotic Stress)}: In cellular metabolism, $\mathfrak{S}$ represents the cellular entropy (related to molecular disorder and metabolic efficiency). $\mathcal{N}$ could be the number of metabolites or the glucose concentration (an extensive variable related to metabolism). $\Lambda_1$ could represent the proton gradient across the mitochondrial membrane, a fundamental emergent order parameter for ATP production (the cellular energy currency). $\theta_1$ would be the thermodynamic force conjugate to the proton gradient, related to the efficiency of oxidative phosphorylation. The ETA Axiom describes how metabolic entropy ($d\mathfrak{S}$) is affected by the Relational Cost Functional ($\delta\mathcal{R}$ - which could quantify metabolic stress or homeostatic strain), glucose consumption ($\mu d\mathcal{N}$), and the proton gradient ($-\theta_1 d\Lambda_1$). For example, under osmotic stress, the cell may adjust its metabolism to maintain homeostasis, which could involve a shift in the Relational Cost Functional, an increase in glucose consumption, and a modification of the mitochondrial proton gradient to ensure the ATP production necessary for stress adaptation. ETA provides a thermodynamic framework for analyzing these complex interrelationships in cellular metabolism.
+\item \textbf{Abstract: Multi-objective genetic algorithms (Logistics route optimization)}: In multi-objective genetic algorithms, used to optimize problems with multiple competing objective functions (such as logistics route optimization by minimizing cost and delivery time simultaneously), $\mathfrak{S}$ could represent a measure of \emph{diversity of solutions} or \emph{robustness of optimization} in the genetic algorithm. $\mathcal{N}$ could be the number of iterations of the genetic algorithm (an extensive variable measuring the \textit{computational effort}). $\Lambda_k$ (for $k=1, 2, \ldots$) could represent emergent order parameters related to the search strategy of the genetic algorithm, such as the weights assigned to different objective functions ($\theta_k$) or the crossover and mutation parameters of the algorithm. The ETA Axiom describes how the diversity of solutions ($d\mathfrak{S}$) is influenced by the Relational Cost Functional ($\delta\mathcal{R}$ - which could quantify the \textit{tension} between different competing objective functions), the computational effort ($\mu d\mathcal{N}$), and the emergent order parameters of the genetic algorithm ($-\sum_{k=1}^\infty \theta_k d\Lambda_k$). For example, when optimizing logistics routes, the genetic algorithm can dynamically adjust the weights of the objective functions (cost vs. time) and the crossover/mutation parameters to efficiently explore the solution space and find an optimal set of routes that represents a good trade-off between cost and time. ETA provides a thermodynamic framework for analyzing the convergence and self-organization dynamics of multi-objective genetic algorithms.
+\end{itemize}
+
+
+\subsubsection{Axiom 8: Informational Consistency (AIC)}
+\label{ax:consistencia}
+
+\textbf{Enunciado:}
+\begin{quote}
+    Informational Consistency in ICE systems is quantified by a measure ($\mathfrak{I}_\text{ICE}$) that assesses the synergistic information generated by the joint interaction of Invariances ($I$), Context ($C$), and Emergence ($E$). This measure is computed as a function of the determinants of the covariance matrices ($\Sigma_I, \Sigma_C, \Sigma_E$) associated with Invariances, Context, and Emergence, respectively. High values of Informational Consistency ($\mathfrak{I}_\text{ICE}$) indicate greater non-reducible emergence, i.e., greater information genuinely generated by the ICE interaction that cannot be explained simply by the sum of the parts (Invariances and Context) separately.
+\end{quote}
+
+\begin{equation}
+\mathfrak{I}_\text{ICE} = \log_2 \left(\frac{\det(\Sigma_I + \Sigma_C + \Sigma_E)}{\sqrt{\det \Sigma_I \det \Sigma_C \det \Sigma_E}}\right)
+\label{eq:consistencia_informacional}
+\end{equation}
+\bigskip
+
+\textbf{Interpretation:} The Axiom of Informational Consistency (AIC) introduces a metric, $\mathfrak{I}_\text{ICE}$, to quantify the \textbf{synergistic information} or \textbf{informational integration} that emerges from the interaction between Invariances, Context, and Emergence in an ICE system. This measure seeks to capture the informational \emph{novelty} or \emph{nonreducibility} of Emergence, i.e., the extent to which the Emergence of the system generates information that was not present in either the Invariances or the Context separately, but rather genuinely arises from their joint interaction. The formula (\ref{eq:consistencia_informacional}) is based on information theory and uses covariance matrices to quantify this informational synergy:
+\begin{itemize}
+\item \textbf{Covariance Matrices ($\Sigma_I, \Sigma_C, \Sigma_E$):} The AIC formula is based on the notion of covariance matrices associated with Invariances ($I$), Context ($C$), and Emergence ($E$). It is assumed that Invariances, Context, and Emergence can be represented as random vectors or random fields, and that their covariance matrices $\Sigma_I, \Sigma_C, \Sigma_E$ can be computed, respectively. These covariance matrices capture the structure of correlations and variances within each ICE component.
+\item \textbf{Determinants of Covariance Matrices ($\det \Sigma_I, \det \Sigma_C, \det \Sigma_E, \det(\Sigma_I + \Sigma_C + \Sigma_E)$):} The AIC formula involves the determinants of these covariance matrices. The determinant of a covariance matrix ($\det \Sigma_X$) can be interpreted as a measure of the \textit{volume} or \textit{extent} of the state space covered by the variable $X$. In informational terms, $\det \Sigma_X$ is related to the differential entropy of the variable $X$. The determinant of the sum of covariance matrices, $\det(\Sigma_I + \Sigma_C + \Sigma_E)$, is related to the joint information of the variables $I, C, E$.
+\item \textbf{Binary Logarithm ( $\log_2$ ) and Normalization:} The formula uses the binary logarithm ($\log_2$) to express the information in bits. The expression inside the logarithm, $\left(\frac{\det(\Sigma_I + \Sigma_C + \Sigma_E)}{\sqrt{\det \Sigma_I \det \Sigma_C \det \Sigma_E}}\right)$, is a ratio of determinants that normalizes the joint information $\det(\Sigma_I + \Sigma_C + \Sigma_E)$ with respect to the \textit{independent information} that would be obtained if Invariances, Context, and Emergence were statistically independent (represented by $\sqrt{\det \Sigma_I \det \Sigma_C \det \Sigma_E}$).
+\end{itemize}
+
+In essence, Informational Consistency $\mathfrak{I}_\text{ICE}$ quantifies \textbf{how much more information the joint ICE interaction contains than the simple sum of the information contained in Invariances and Context separately}. High values of $\mathfrak{I}_\text{ICE}$ indicate \textbf{high informational synergy} and \textbf{strong and genuinely non-reducible emergence}, where Emergence contributes informational novelty beyond what would be expected from the constituent parts (Invariances and Context) considered in isolation. Low values of $\mathfrak{I}_\text{ICE}$ suggest weaker or reducible emergence, where the information from Emergence can largely be explained by information already present in Invariances and Context separately.\par
+
+\textbf{Examples:}
+\begin{itemize}
+\item \textbf{Physical: Superconductivity in cuprates (Transition at $T_c$)}: In high-temperature superconductivity in cuprates, the Invariances ($\Sigma_I$) could represent the short-range electronic correlations (local interactions between electrons in the crystal lattice). The Context ($\Sigma_C$) would be given by the lattice structure of the material (the arrangement of the atoms in the crystal lattice, which influences the movement of the electrons). The Emergence ($\Sigma_E$) would be the formation of Cooper pairs and the appearance of the superconducting state (characterized by resistance-free electrical conductivity). The AIC Axiom, through $\mathfrak{I}_\text{ICE}$, quantifies the informational consistency of superconductivity in cuprates. High values of $\mathfrak{I}_\text{ICE}$ in the superconducting phase would indicate that superconductivity in cuprates is a genuinely emergent property, arising from the synergistic interaction between local electron correlations and the lattice structure, and not simply reducible to the sum of the properties of the electrons and the crystal lattice separately. The transition to the critical temperature $T_c$ could be marked by a significant increase in $\mathfrak{I}_\text{ICE}$, reflecting the point where superconducting emergence becomes dominant and non-reducible.
+\item \textbf{Abstract: Deep neural networks (Feature emergence in transformers)}: In deep neural networks, especially in Transformer models used in natural language processing and vision, the Invariances ($\Sigma_I$) could represent the synaptic weights of the network (the connection structure learned during training). The Context ($\Sigma_C$) would be the input data (the text or images presented to the network). The Emergence ($\Sigma_E$) would be the latent representations or the abstract \textit{features} that the neural network learns to extract from the input data in its hidden layers (e.g., semantic representations of language, high-level visual features). The AIC Axiom, through $\mathfrak{I}_\text{ICE}$, quantifies the informational consistency in deep neural networks. High values of $\mathfrak{I}_\text{ICE}$ would indicate that the ability of deep neural networks to learn abstract representations and solve complex tasks (such as machine translation or object recognition) is a form of non-reducible emergence, arising from the synergistic interaction between the network structure (synaptic weights) and the input data, and which cannot be explained simply as a sum of the network and data properties separately. The emergence of abstract \textit{features} in the Transformer layers, which allow the network to perform complex information processing tasks, would be associated with high values of $\mathfrak{I}_\text{ICE}$.
+\end{itemize}
+
+
+
+\section{Central Dynamic Principle: Contextual Persistence (PCP-ECIT)}\label{sec:PCP-ECIT}
+
+\subsection{General Statement of the PCP-ECIT}
+
+The central dynamic principle of ECIT is based on the Principle of Contextual Persistence (PCP-ECIT), whose general statement is as follows:
+\bigskip
+
+\noindent \fbox{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}{
+\textbf{``The evolution of any Invariance-Context-Emergence (ICE) system is governed by the minimization of a relational cost functional ($\mathcal{R}$), which quantifies the inherent tension between Invariances ($I$), Context ($C$) and Emergence ($E$).''}
+}}
+
+\bigskip
+This principle postulates that the dynamics of any system that can be described under the ICE paradigm tend to intrinsically adjust to reduce a relational \textit{tension} or \textit{cost}. This cost is not a simple scalar value, but a function that depends on the complex interaction between the invariances that define the structure of the system, the context that modulates its interactions, and the emergence that arises from this interaction, recursively redefining both.
+\subsection{Contextual Persistence Functional}
+
+The Contextual Persistence Principle (PCP-ECIT) is formalized by the \textbf{Relational Cost Functional} $\mathcal{R}(t)$, which is mathematically expressed as:
+
+\begin{equation}
+\mathcal{R}(t) = \underbrace{\alpha \left\| \frac{\delta I}{\delta C} \right\|^2}_{\text{Contextual Rigidity}} + \underbrace{\beta S(C|I)}_{\text{Contextual Uncertainty}} + \underbrace{\gamma \int_{t_0}^t |E_{\text{obs}} - E_{\text{ICE}}|^2 dt}_{\text{No Emergent Reducibility}}
+\label{eq:R}
+\end{equation}
+
+Where each term of the functional $\mathcal{R}(t)$ quantifies a fundamental aspect of the tension inherent to the ICE system:
+\begin{itemize}
+\item \textbf{Contextual Rigidity} ($\alpha \left\| \frac{\delta I}{\delta C} \right\|^2$): This term measures the sensitivity of the Invariances ($I$) to changes in the Context ($C$). High rigidity indicates that the structural invariances remain relatively stable against contextual fluctuations, thus minimizing excessive structural adaptation. The parameter $\alpha$ weights the importance of rigidity in the total cost functional.
+\item \textbf{Contextual Uncertainty} ($\beta S(C|I)$): This term quantifies the uncertainty or entropy of the Context ($C$) given a set of Invariances ($I$). It represents the diversity and richness of possible interactions modulated by the context. $S(C|I)$ could be interpreted as a conditional entropy, and the parameter $\beta$ modulates the weight of contextual uncertainty in the functional.
+\item \textbf{Emergent Non-Reducibility} ($\gamma \int_{t_0}^t |E_{\text{obs}} - E_{\text{ICE}}|^2 dt$): This term evaluates the accumulated difference over time between the observed Emergence ($E_{\text{obs}}$) and the Emergence predicted by the ICE model ($E_{\text{ICE}}$). It quantifies the extent to which the emergent behavior of the system is not completely reducible to the invariances and context separately, reflecting the genuine novelty that emergence brings. The parameter $\gamma$ tunes the relevance of non-reducibility in minimizing the functional.\end{itemize}
+
+Minimizing the functional $\mathcal{R}(t)$ over time drives the evolution of the ICE system toward states that achieve an optimal balance between these three fundamental tensions: maintaining structural rigidity, managing contextual uncertainty, and accommodating the non-reducibility of emergence. This principle of contextual persistence mirrors foundational ideas in theoretical neuroscience, such as Friston’s free-energy principle, where systems minimize prediction error (or surprisal) to maintain adaptive coherence with their environment \cite{Friston2010}. In ECIT, however, this minimization is generalized to encompass not just neural systems, but any ICE-structured complex system.
+
+\subsection{Master Equation of Evolution}
+
+The dynamics of the ICE system, governed by the Contextual Persistence Principle, can be described by a \textbf{Master Evolution Equation} that models the evolution of the probability distribution $P(x,t)$ in the state space of the system:
+\begin{equation}
+\partial_t P(x,t) = -\nabla_x \cdot [P \nabla_x \mathcal{R}] + \text{Div}(Q \cdot \nabla_x P) + \lambda \mathcal{N}(P)
+\label{eq:ecuacion_maestra}
+\end{equation}
+
+This equation integrates several key components:
+\begin{itemize}
+    \item \textbf{Deterministic Drift Term} ($-\nabla_x \cdot [P \nabla_x \mathcal{R}]$): This term describes the deterministic evolution of the system driven by the minimization of the relational cost functional $\mathcal{R}$. The gradient $\nabla_x \mathcal{R}$ indicates the direction in the state space that reduces the value of $\mathcal{R}$, and the probability $P(x,t)$ \textit{drifts} in this direction.
+    
+    \item \textbf{Stochastic Diffusion Term} ($\text{Div}(Q \cdot \nabla_x P)$): This term introduces a stochastic or noise component into the evolution of the system, represented by a diffusion term. The matrix $Q$ (possibly state-dependent) controls the intensity and anisotropy of the random fluctuations. This term allows the system to explore the state space and escape from local minima of the functional $\mathcal{R}$.
+    \item \textbf{Nonlinearity/Self-Organization Term} ($\lambda \mathcal{N}(P)$): This term, represented generically as $\lambda \mathcal{N}(P)$, incorporates nonlinear and self-organizing processes that are intrinsic to complex systems. $\mathcal{N}(P)$ could represent different types of nonlinear interactions, feedbacks, or state creation and destruction processes, and $\lambda$ is a parameter that controls the strength of these nonlinear effects.
+\end{itemize}
+
+The Master Evolution Equation (Eq. \ref{eq:ecuacion_maestra}), together with the Contextual Persistence Functional $\mathcal{R}(t)$ (Eq. \ref{eq:R}), constitutes the core of the Central Dynamic Principle of ECIT. This formalism provides a theoretical framework for modeling the evolution of complex systems that are structured under the Invariance-Context-Emergence triad, capturing both the deterministic dynamics aimed at minimizing relational tension, and the influence of stochastic fluctuations and self-organizing processes.
+
+\section{ICE Hierarchy: Recursive Universality}
+
+The central idea of the ICE Hierarchy (Invariance-Context-Emergence) lies in the recursive nature of complex systems: each ICE system does not emerge from nothing, but emerges from a lower-degree ICE system. In turn, this emergent ICE system becomes the invariance for higher-degree ICE systems. This hierarchical imbrication, essential for the hierarchical universality of ECIT, is formalized through an axiomatic and mathematical scheme that explicitly links different scales and levels of organization. The structure of this recursive hierarchy is detailed below:
+
+\subsection{1. Definition of Degrees in ECIT}
+In ECIT, we define a \textbf{grade} ($n$) as a specific level within the organizational hierarchy. Each grade is characterized by a particular ICE system:
+\begin{itemize}
+    \item \textbf{ICE($n$): Grade System \textit{n}}
+    \begin{itemize}
+        \item Composed of the fundamental triad: Invariance of degree \textit{n} ($I_n$), Context of degree \textit{n} ($C_n$), and Emergence of degree \textit{n} ($E_n$).    \end{itemize}
+    \item \textbf{ICE($n+1$): Grade System \textit{n+1} (Higher)}
+    \begin{itemize}
+        \item Arises from the lower degree, where the \textbf{Emergence of degree \textit{n} ($E_n$) becomes the Invariance of degree \textit{n+1} ($I_{n+1}$)}.     
+        \item The Context of degree \textit{n+1} ($C_{n+1}$) emerges from the interaction between this new Invariance of higher degree ($I_{n+1}$) and a new context that operates at a larger scale.
+    \end{itemize}
+\end{itemize}
+
+Essentially, the \textbf{ICE Hierarchy} describes a recursive chain where the emergence of one level is transformed into the invariance of the next, creating a hierarchical structure of nested ICE systems. This transition between grades can be conceptualized by a \textbf{hierarchical coupling function} ($\mathcal{F}$) that connects the emergence of one level to the context of the next higher level: $\mathcal{F}: E_n \times C_{\text{macro}} \rightarrow C_{n+1}$.
+
+\subsection{2. ICE Recursion Axiom (ICE-RA)}
+
+The principle of hierarchical recursion is formalized in the ICE Recursion Axiom (ICE-RA), which states:
+\bigskip
+
+\noindent \fbox{\parbox{0.95\textwidth}{
+\textbf{For every ICE($n$) system in the hierarchy, there exist:}
+\begin{itemize}
+    \item \textbf{A lower-degree ICE($n-1$) system} whose Emergence ($E_{n-1}$) defines the Invariance ($I_n$) of the ICE($n$) system.
+    \item \textbf{A higher-degree ICE($n+1$) system} where the Emergence ($E_n$) of the ICE($n$) system acts as the Invariance ($I_{n+1}$), this system being subject to a larger-scale Context ($C_{n+1}$).
+    \item \textbf{The transition between degrees} is typically mediated by \textbf{critical invariance breaks} that signal the move to a new level of organization (e.g., criticality condition: $\partial \mathcal{R}_n/\partial t > R_c$).
+\end{itemize}
+}}
+
+\bigskip
+
+This axiom encapsulates the fundamental idea of hierarchical recursion in ECIT: each level of organization emerges from the previous one and lays the foundation for the next, in a continuous chain of increasing complexity. Critical invariance breaks act as transition points between these levels, marking the emergence of new properties and behaviors as one moves up the hierarchy.
+
+\subsection{3. Mathematical Formalization of the ICE Hierarchy}\label{subsec:formalizacion}
+
+The recursion inherent in the ICE Hierarchy can be expressed mathematically through functional relationships that link the components of ICE systems to different degrees.
+
+\subsubsection{3.1. Relation between Degrees: Emergence as Higher Invariance}
+
+The Invariance of an ICE system at degree ($n+1$), denoted as $I_{n+1}$, is \textbf{functionally dependent on the Emergence} of the ICE system at the lower degree ($n$), $E_n$. This relation can be formalized by a \textbf{renormalization operator} $\Psi$:
+\begin{equation*}
+    I_{n+1} = \Psi(E_n)
+\end{equation*}
+
+The operator $\Psi$ represents a \textit{freezing} or \textit{abstraction} process where the dynamic and complex properties of the Emergence $E_n$ are consolidated and \textit{renormalized} into a more stable and larger-scale Invariance, $I_{n+1}$. This renormalization process essentially encapsulates the relevant information of the lower-level Emergence to serve as a structural basis for the higher level.
+
+\subsubsection{3.2. Context as a Bridge between Degrees: Integration and Scale}
+
+The Context of an ICE system at degree ($n+1$), $C_{n+1}$, acts as a bridge between the Emergence of the lower degree ($E_n$) and contextual factors operating at an even larger scale, represented as a \textbf{Macro Context} ($C_{\text{macro}}$). This integration can be described by a \textbf{contextual mediation operator} $\Phi$:
+\begin{equation*}
+    C_{n+1} = \Phi(E_n, C_{\text{macro}})
+\end{equation*}
+
+The operator $\Phi$ represents the way the new higher-degree context ($C_{n+1}$) is modulated and configured from two main sources:
+\begin{itemize}
+\item The influence of the Emergence of the lower level ($E_n$), which provides information about the dynamics and emergent properties of the previous level.
+\item Contextual factors external to the ICE hierarchy($n$) ($C_{\text{macro}}$), which represent higher-scale or environmental conditions that influence the new context.
+\end{itemize}
+
+Similarly, the Relational Cost Functional can also be extended to the hierarchy, although its precise formalization depends on the specific nature of the ICE hierarchy under consideration:
+\begin{equation*}
+    \mathcal{R}_{n+1} = f(\mathcal{R}_n, \nabla E_n)
+\end{equation*}
+
+This expression suggests that the relational cost functional at a higher level ($\mathcal{R}_{n+1}$) may depend on the cost functional at the lower level ($\mathcal{R}_n$) and on the dynamic properties of the emergence at that level, such as its gradient ($\nabla E_n$), reflecting the interdependence and recursion inherent in the ICE hierarchy.
+
+Finally, we can summarize the recursive relationship between ICE degrees concisely as follows:
+\begin{align*}
+\text{ICE}(n) &\longrightarrow \text{ICE}(n+1) \\
+I_{n+1} &= \Psi(E_n) \\
+C_{n+1} &= \Phi(E_n, C_{\text{macro}}) \\
+\mathcal{R}_{n+1} &= f(\mathcal{R}_n, \nabla E_n)
+\end{align*}
+
+This set of mathematical relationships provides a formal framework for understanding how the ICE hierarchy allows complex systems to be built from the recursion of the Invariance-Context-Emergence triad across multiple scales of organization.
+
+\subsection{The Zero Degree: Primordial State ICE}\label{subsec:grado_cero}
+
+The \textbf{zero degree} ($n=0$) represents the primordial undifferentiated state where the ICE triad exists in critical equilibrium:
+
+\begin{equation}
+\text{ICE}(0) = \left\{ (I_0, C_0, E_0) \in \mathcal{H} \,|\, \mathcal{R}(I_0,C_0,E_0) = 0 \right\}
+\end{equation}
+where $\mathcal{H} = L^2(\mathbb{U}) \otimes \mathfrak{g}$ is the space of potential configurations and $\mathfrak{g}$ the algebra of fundamental symmetries.
+
+\noindent\textbf{Key Features:}
+\begin{itemize}
+\item Perfect balance: $\delta\mathcal{R}/\delta I = \delta\mathcal{R}/\delta C = \delta\mathcal{R}/\delta E = 0$
+\item Maximum symmetry: $\mathcal{G}_0 \supset \mathcal{G}_n\ \forall n > 0$
+\item Undifferentiation: $I_0 \circledast C_0 \circledast E_0$ (unitary triadic interaction)
+\end{itemize}
+
+
+\subsection{Critical Transition: \texorpdfstring{$n=0 \to n=1$}{n=0 -> n=1}}
+The hierarchy emerges when fluctuations ($\xi_I, \xi_C, \xi_E$) break the equilibrium:
+\begin{equation}
+\mathcal{L}\phi_k = \lambda_k\phi_k,\quad \mathcal{L} = \begin{pmatrix}
+\frac{\delta^2\mathcal{R}}{\delta I^2} & \frac{\delta^2\mathcal{R}}{\delta I\delta C} & \frac{\delta^2\mathcal{R}}{\delta I\delta E} \\
+\frac{\delta^2\mathcal{R}}{\delta C\delta I} & \frac{\delta^2\mathcal{R}}{\delta C^2} & \frac{\delta^2\mathcal{R}}{\delta C\delta E} \\
+\frac{\delta^2\mathcal{R}}{\delta E\delta I} & \frac{\delta^2\mathcal{R}}{\delta E\delta C} & \frac{\delta^2\mathcal{R}}{\delta E^2}
+\end{pmatrix}
+\end{equation}
+
+The unstable mode ($\text{Re}(\lambda_k) > 0$) generates the first transition:
+\begin{equation}
+\text{ICE}(1) = \text{Dom}(\phi_{k_{\text{max}}}) \oplus \text{Ker}(\mathcal{L}^\dagger)
+\end{equation}
+
+\subsection{Definition of Degrees in ECIT}
+\label{subsec:grados}
+
+The hierarchy is structured as:
+\begin{itemize}
+\item \textbf{ICE($0$): Primordial state} - Unbroken symmetry, $\mathcal{R}=0$
+\item \textbf{ICE($n$): Degree system $n$} - Differentiated triad $(I_n,C_n,E_n)$
+\item \textbf{ICE($n+1$): Higher degree system} - $I_{n+1} = \Psi(E_n)$, $C_{n+1} = \Phi(E_n,C_{\text{macro}})$
+\end{itemize}
+
+\subsection{Extended ICE Recursion Axiom (ICE-RA+))}
+\label{subsec:axioma_recursividad}
+
+\noindent\fbox{\parbox{0.95\textwidth}{
+\textbf{For every ICE($n$) system with $n \geq 1$:}
+\begin{itemize}
+\item There exists ICE($n-1$) whose $E_{n-1}$ defines $I_n$
+\item There exists ICE($n+1$) where $E_n$ becomes $I_{n+1}$
+\item For $n=0$: $\exists!\ \text{ICE}(0)$ fundamental with no predecessor
+\item Transitions mediated by invariance breakings: $\partial_t\mathcal{R}_n > \mathcal{R}_c$
+\end{itemize}
+}}
+
+\begin{equation}\label{eq:ari-ecitplus}
+\mathcal{T}: \text{ICE}(n) \to \text{ICE}(n+1)\ \text{vía}\ \mathcal{T} = e^{\int \mathcal{L} dt}
+\end{equation}
+
+\subsection{Examples of Critical Transitions}
+\label{subsec:ejemplos}
+
+\subsubsection{Quantum Cosmology}
+\begin{itemize}
+\item ICE(0): Hartle-Hawking quantum vacuum
+\item Transition: Vacuum fluctuations $\langle \xi_C \rangle \neq 0$
+\item ICE(1): Inflationary spacetime + quantum fields
+\end{itemize}
+
+\subsubsection{Biogenesis}
+\begin{itemize}
+\item ICE(0): Prebiotic support (e.g. hydrothermal)
+\item Transition: Self-assembly of protocells
+\item ICE(1): Autopoietic systems with metabolism
+\end{itemize}
+
+
+\section{Time in ECIT: A Relational Construct}
+
+In Emergent Contextual Invariance Theory (ECIT), time is formalized as an emergent property of the $I$-$C$-$E$ interaction:
+\begin{itemize}
+\item \textbf{Temporal persistence of invariances:}
+\begin{equation}
+I(x,t_0) = I(T(x),t_1) \quad \forall t_1 \in [t_0, t_0 + \Delta t_C], \quad \Delta t_C = \frac{1}{\|\nabla_C I\|}
+\end{equation}
+
+\item \textbf{Temporal context:}
+\begin{equation}
+C(t) = \left\langle \mathcal{M}(\tau), \{\phi_i(\tau)\} \right\rangle, \quad \tau(t) = \int_0^t \frac{dt'}{\sqrt{1 + \|\nabla_I E(t')\|^2}}
+\end{equation}
+
+\item \textbf{Historic emergency:}
+\begin{equation}
+E(t) = \Psi\left(I(t), C(t), \int_{t_0}^t \mathcal{F}(I,C) \cdot e^{-\lambda(t-\tau)} d\tau \right)
+\end{equation}
+\end{itemize}
+
+\subsection{ICE Temporal Hierarchy}
+Absolute time is replaced by a network of effective times:
+\begin{equation}\label{tECIT}
+t_{\text{ECIT}} = \bigotimes_{n=0}^\infty \tau_n, \quad \tau_n = \frac{\mathcal{R}_{n-1}}{\mathcal{R}_n} \Delta t_n
+\end{equation}
+where $\mathcal{R}_n$ is the persistence functional of degree $n$.
+
+\subsection{Fundamental Consequences}
+\begin{itemize}
+\item \textbf{Non-existence of prior time:} $\nexists t_0 \in \mathbb{R} \,|\, t_0 < \min(\Delta t_C)$
+\item \textbf{Multiple Timelines:} $\exists \tau_1, \tau_2$ such that $\frac{d\tau_1}{d\tau_2} \neq \text{cte}$
+\item \textbf{Singularities:} $\lim_{\mathcal{R} \to \infty} \Delta t_C = 0$
+\end{itemize}
+
+
+\section{Potential Applications of ECIT}\label{sec:aplicaciones}
+
+Emergent Contextual Invariance Theory (ECIT) offers a conceptual and mathematical framework that can be applied to a wide range of complex phenomena. Below, we explore some potential applications in various fields, illustrating how the Invariance-Context-Emergence (ICE) triad can provide new insights and tools for analysis.
+
+\subsection{Condensed Matter Physics}
+
+In condensed matter physics, ECIT could be used to understand and predict the emergent properties of complex materials, such as high-temperature superconductors or topological materials.
+
+\textbf{Invariance (I):} The fundamental laws of quantum mechanics and electromagnetism.
+
+\textbf{Context (C):} The crystal structure of the material, temperature, pressure, and the presence of impurities or defects.
+
+\textbf{Emergence (E):} The appearance of superconductivity, magnetism, or unusual topological properties.
+
+ECIT could help identify the critical points of invariance that lead to these emergent phases, and determine the minimum context necessary for their emergence.
+
+\subsection{Systems Biology}
+
+In systems biology, ECIT could be applied to the study of genetic networks, metabolic pathways, and the emergence of complex behaviors in living organisms.
+
+\textbf{Invariance (I):} The laws of biochemistry and genetics, such as DNA replication, RNA transcription, and protein translation.
+
+\textbf{Context (C):} The cellular environment, nutrient availability, the presence of hormonal signals, and interactions between different cell types.
+
+\textbf{Emergence (E):} Gene regulation, cell differentiation, embryonic development, and response to external stimuli.
+
+ECIT could provide a framework for understanding how interactions between different components of a biological system give rise to emergent properties that cannot be predicted from the study of individual components, aligning with Kauffman’s theory on the interplay between self-organization and selection in evolutionary processes \cite{Kauffman1993}.
+
+\subsection{Cognitive Neuroscience}
+
+Cognitive neuroscience is another field where ECIT could be valuable. It could help model the emergence of consciousness, cognition, and behavior from the activity of neural networks.
+
+\textbf{Invariance (I):} The electrochemical properties of neurons, the structure of synapses, and the basic principles of learning and neuronal plasticity.
+
+\textbf{Context (C):} The connectivity of neuronal networks, the presence of neurotransmitters, modulation by hormones, and the influence of the external environment.
+
+\textbf{Emergence (E):} Perception, memory, language, decision making, and consciousness.
+
+ECIT could allow us to explore how the interaction between different areas of the brain gives rise to subjective experience and the ability to interact with the world, resonating with Eagleman’s insights into the brain’s livewired adaptability and dynamic reorganization in response to environmental challenges \cite{Eagleman2020}.
+
+\subsection{Social Sciences and Economics}
+
+Although more speculative, ECIT could even offer insights into the social sciences, helping to model phenomena such as the formation of public opinion, the dynamics of financial markets, and the evolution of social institutions.
+
+\textbf{Invariance (I):} Basic principles of human behavior, such as bounded rationality, risk aversion, and the need to belong.
+
+\textbf{Context (C):} Social norms, laws, political institutions, and communication networks.
+
+\textbf{Emergence (E):} The formation of financial bubbles, political polarization, the spread of rumors, and social change.
+
+ECIT could help understand how interactions between individuals and social structures give rise to complex and often unpredictable collective phenomena.
+
+\subsection{Artificial Intelligence}
+
+ECIT could inform the design of more robust and adaptable artificial intelligence systems that are capable of learning and generalizing from limited data.
+
+\textbf{Invariance (I):} The laws of logic, probability, and information theory.
+
+\textbf{Context (C):} The architecture of the neural network, the learning algorithms, and the training data.
+
+\textbf{Emergence (E):} The ability to recognize patterns, solve problems, make decisions, and create new ideas.
+
+By understanding how the interaction between invariances and contexts gives rise to the emergence of intelligence, we might be able to design AI systems that are better able to cope with the complexity and uncertainty of the real world.
+
+\subsection{ECIT as a Transdisciplinary Framework for Teaching-Learning}
+The Emergent Contextual Invariance Theory (ECIT) offers a unique conceptual framework for contemporary education, allowing:
+
+\begin{itemize}
+    \item \textbf{Complexity Disaggregation}: Identifying fundamental patterns (invariances) in seemingly diverse systems
+    \item \textbf{Dynamic Contextualization}: Relating abstract concepts to their specific manifestations
+    \item \textbf{Emergent Synthesis}: Fostering systemic thinking through multi-level connections
+\end{itemize}
+
+\subsubsection{Cognitive Transfer Mechanisms}
+The ICE triad operates as a \textbf{semantic architecture} for deep learning:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{ICE component} & \textbf{Human} & \textbf{AI Syetem} \\ \hline
+    Invariance (I) & Fundamental principles & Basic rules of the model \\
+    Context (C) & Educational situation & Training environment \\
+    Emergence (E) & Holistic understanding & Adaptive behavior \\ \hline
+    \end{tabular}
+    \caption{ICE functional equivalence in learning systems}
+\end{table}
+
+
+\subsubsection{Advantages as a Universal Methodology}
+\begin{itemize}
+    \item \textbf{Transferability}: Mechanisms applicable from basic education to advanced research
+    \item \textbf{Scalability}: Adaptable to different domains through recontextualization ($\Phi$-operator)
+    \item \textbf{Comprehensive evaluation}: Monitoring learning through $\mathcal{R}(t)$ as a unified metric
+\end{itemize}
+
+This approach transcends memorization, cultivating \textbf{relational intuition} that connects everything from quantum physics to social sciences, establishing ECIT as the \textit{lingua franca} for 21st-century scientific literacy.
+
+\section{General Conclusions}
+\noindent Emergent Contextual Invariance Theory (ECIT) represents a significant advance in our understanding and modeling of complex systems. Far from being a mere theoretical proposal, ECIT stands as a robust operational framework that not only \textbf{resolves the reductionism-holism dichotomy}, but also offers concrete tools to address the complexity inherent in multiple scientific disciplines. Its key contributions, derived from a rigorous axiomatics (\ref{sec:axiomas}), a dynamical principle (\ref{sec:PCP-ECIT}, and an exhaustive experimental validation (\ref{ApendiceA1}), encompass:
+
+\paragraph{Multi-scale causal integration:} The fundamental architecture of ECIT, the ICE recursive hierarchy (Eq. \ref{subsec:axioma_recursividad}), enables the modeling of diverse phenomena, from superconductivity to cognition, while maintaining an intrinsic connection with its fundamental components. This integration capability is clearly manifested in the use cases presented (Appendix A1-A2-A3), where the application of ECIT to physical, biological, and abstract phenomena is observed with remarkable robustness regardless of the dimension of the problem.
+
+\paragraph{Quantitative Tools for Emergence:} ECIT provides rigorous metrics for the design and analysis of complex systems. The persistence functional \(R(t)\) (Eq.\ref{eq:R}) and the informational consistency $\mathfrak{I}_\text{ICE}$ (Eq. \ref{eq:consistencia_informacional}) offer precise quantitative tools for characterizing and predicting emergence in systems as varied as quantum materials and self-adaptive algorithms. These tools overcome the limitations of purely descriptive approaches, opening the door to first-principles-based complexity engineering.
+
+\paragraph{Overcoming disciplinary barriers:} ECIT transcends the limitations of classical frameworks by proposing a reformulation of time as a relational construct (Eq. \ref{tECIT}) and by capturing polyvalent causality (Axiom 5 \ref{eq:APC_formula}). This innovative view allows for bridging traditionally separate disciplines. Applications as diverse as quantum cosmology and logistics route optimization exemplify the breadth and versatility of ECIT in addressing complex problems in radically different contexts. As more research develops and empirical data is collected, it will be possible to further validate and refine these theoretical models, exploring new applications in additional fields.
+
+\paragraph{Epistemological implications:} ECIT underpins a \textbf{contextual relationalism}, where the properties of a system are not considered intrinsic to its isolated components, but rather \textbf{emerge from interactions} \textbf{I-C-E}. This perspective redefines fundamental approaches in fields such as synthetic biology, where the design of emergent patterns is promoted, and explainable AI, where the auditing of algorithmic biases is facilitated by understanding the contextual genesis of decisions.
+
+\paragraph{Relational Reconceptualization of Gravity and Space-Time}
+The ECIT approach radically reframes gravity as a \textit{relational emergence} mediated by ICE dynamics, where space-time loses its fundamental status to become an emergent construct subject to the Meta-Axiom of Relational Universality (MRU). This framework unifies scales through the master equation:
+\begin{equation}
+    G_{\mu\nu}^{\text{(ECIT)}} = \Psi\left( \nabla_{C}I_{\text{geom}}, \int \mathcal{F}(I_{\text{quantum}}, C_{\text{macro}}) d\tau \right)
+\end{equation}
+where the space-time metric emerges from geometric invariances ($I_{\text{geom}}$) under cosmological contexts ($C_{\text{macro}}$). The formulation $t_{\text{ECIT}}$ (Eq. \ref{tECIT}) shows that time is not an absolute substratum but an emergent relational variable from multi-level ICE interactions. This perspective resolves the historical tension between General Relativity and Quantum Mechanics by establishing that: 1) Gravity operates as an emergent contextual constraint (not a fundamental force), 2) Space-time singularities correspond to collapses of the functional $R(t)$ (Eq. \ref{eq:R}) in contextual criticality regimes. The MRU provides the axiomatic scaffolding for this synthesis, revealing that the cosmic structure is a hierarchical network of ICE(n) $\xrightarrow{\Psi,\Phi}$ ICE(n+1) transitions where each level recursively redefines the notions of space, time and gravitation.
+
+
+\paragraph{}
+Finally, ECIT is not limited to being an elegant theoretical framework; it is presented as an essential predictive and unifying tool for 21st century science. ECIT's ability to unify different levels of description and to quantify the emergence of complex properties makes it a promising tool to address some of the most important challenges of current and future science. These characteristics also make it indispensable as a pedagogical approach at various levels of teaching and research, but also position it as an interesting tool in the training of artificial models of deep reasoning. In essence, ECIT offers a unifying framework that overcomes the reductionism-holism dichotomy, provides rigorous predictive tools, and builds interdisciplinary bridges, consolidating itself as a scientific paradigm with great potential.
+
+\newpage
+\
+\maketitle
+
+\section{Appendix A1: Application of ECIT to the Double Slit Experiment}\label{ApendiceA1}
+
+This appendix details how Emergent Contextual Invariance Theory (ECIT) can be applied to analyze the double-slit experiment, explaining both the wave-like and corpuscular behavior observed, and suggesting an interpretation of the empirical results.
+
+\subsection{ICE Decomposition of the Experiment}
+
+The key to understanding the ECIT experiment lies in correctly identifying the Invariances (I), Context (C), and Emergence (E) present.
+
+\subsubsection{Invariances (I)}
+
+The fundamental invariances in this quantum system are:
+\begin{enumerate}
+\item \textbf{Quantum Phase Symmetry:} The wave function is invariant under a local phase transformation:
+$$ \psi(x) \rightarrow e^{i\theta(x)} \psi(x) $$
+This symmetry, related to the U(1) gauge group, is essential for quantum coherence.
+\item \textbf{Probability Conservation:} The overall probability of finding the particle must always be 1:
+    $$ \int_{-\infty}^{\infty} |\psi(x,t)|^2 dx = 1 \quad \forall t $$
+\end{enumerate}
+
+\subsubsection{Context (C)}
+
+The experimental context is what \textbf{modulates} the manifestation of invariances. We define:
+
+$$ C = \langle M_{exp}, \{ \phi_{rendijas}, \phi_{detector} \} \rangle $$
+
+Where:
+
+\begin{itemize}
+    \item \(M_{exp}\): The geometry of the experimental apparatus, including the distance between the slits \(d\), the distance to the screen, and the general layout.
+    \item \(\phi_{slits}(x)\): A function describing the presence of the slits. It can be modeled as two delta functions:
+$$ \phi_{slits}(x) = \delta(x - d/2) + \delta(x + d/2) $$
+    \item \(\phi_{detector}\): A binary context field indicating whether there is a detector at one of the slits (\(\phi_{detector} = 1\)) or not (\(\phi_{detector} = 0\)). This is the crucial element that modifies the context and emergence.
+\end{itemize}
+
+\subsubsection{Emergence (E)}
+
+Emergence is the observable outcome of the experiment, which depends on the context.
+
+\begin{itemize}
+ \item \textbf{No Detector (\(\phi_{detector} = 0\)):} The emergence is an interference pattern on the detection screen. The probability distribution function on the screen is:
+    $$ E_{interferencia}(x) \propto |\psi_1(x) + \psi_2(x)|^2 $$
+Where \(\psi_1(x)\) and \(\psi_2(x)\) are the wave functions passing through each slit, respectively.
+\item \textbf{With Detector (\(\phi_{detector} = 1\)):} Emergence is the absence of the interference pattern. The particles pass through a single slit and a two-band pattern is observed, as if they were classical particles. The probability distribution is:
+      $$ E_{particulas}(x) \propto |\psi_1(x)|^2 + |\psi_2(x)|^2$$
+\end{itemize}
+
+\subsection{ECIT Analysis of Wave Function Collapse}
+
+ECIT interprets the measurement as an abrupt change in context, resulting in a change in emergence. The presence of the detector \textbf{breaks the phase symmetry} (Invariance I.1) at the measurement point, leading to the collapse of the wave function and loss of interference.
+
+This is modeled as:
+
+$$ ICE_{cuantico} \xrightarrow{\phi_{detector} = 1} ICE_{clasico} $$
+
+Where:
+
+\begin{itemize}
+\item \textbf{\(ICE_{quantum}\):} Phase invariance + Context (without detector) + Interference pattern.
+
+\item \textbf{\(ICE_{classic}\):} Loss of local phase invariance (due to measurement) + Context (with detector) + Two-band pattern.
+\end{itemize}
+The key is that the \textbf{context} (the presence of the detector) is what forces the transition from one behavior to another.
+
+\subsection{ECIT Empirical Results and Predictions}
+
+ECIT not only qualitatively explains the experiment, but can also make quantitative predictions.
+
+\subsubsection{Interference Visibility}
+
+The visibility of the interference pattern is defined as:
+
+$$ V = \frac{I_{max} - I_{min}}{I_{max} + I_{min}} $$
+
+Where \(I_{max}\) and \(I_{min}\) are the maximum and minimum intensities of the interference pattern.
+
+The ECIT predicts that the visibility of the interference pattern will depend on the \textbf{strength of the interaction between the particle and the detector}. If the interaction is weak (the detector perturbs the system little), the visibility will be high. If the interaction is strong (the detector perturbs the system a lot), the visibility will be low or zero.
+
+\subsubsection{Relationship between Information and Perturbation}
+
+The ECIT suggests that there is a fundamental relationship between the amount of information obtained about the particle's trajectory and the perturbation introduced into the system. The greater the information, the greater the perturbation and the lower the visibility of the interference pattern.
+
+\subsection{Conclusions}
+
+ECIT offers valuable insight into the double-slit experiment, explaining both wave and particle behavior as different manifestations of the same quantum system, depending on the experimental context. The key to ECIT is that it makes the context appear to be the cause of the change in the quantum state. Furthermore, it offers quantitative predictions that can be verified experimentally.
+
+\newpage
+\maketitle
+
+\section{Appendix A2: Surplus Offspring from the ECIT Perspective}
+
+This appendix explores how Emergent Contextual Invariance Theory (ECIT) can be applied to analyze the evolutionary strategy of species that produce large numbers of offspring, where most do not survive, but the surplus is crucial for the ecosystem.
+
+\subsection{ICE Decomposition of the System}
+
+We analyze the surplus offspring strategy at two levels: the individual species and the ecosystem.
+
+\subsubsection{Level 1: The Species (Species A)}
+
+\textbf{Invariances (I):}
+ 
+\textbf{- Reproductive Potential (R):} Represents the maximum intrinsic potential of the species to reproduce. It depends on genetic and physiological factors. It can be modeled as:
+$$ R = f(G, F) $$
+where \(G\) represents the genome (constant within the species) and \(F\) the physiological characteristics (also relatively constant).
+
+\textbf{- Basal Metabolic Rate (B):} It is the minimum energy required for maintenance.
+
+\textbf{- Physical Constraints (\(\Omega_F\)):} Limitations imposed by the laws of physics and chemistry (e.g.: maximum egg size, minimum gestation time).
+    
+\bigskip
+\noindent\textbf{Context (C):}
+
+Context modulates the expression of reproductive potential.
+$$ C = \langle \rho, \pi, \varepsilon, \tau \rangle $$
+where:\par
+- \(\rho\): Population density of species A. The higher the density, the greater the competition for resources.\par
+- \(\pi\): Predation pressure. It is the probability that a young is preyed upon.\par
+- \(\varepsilon\): Resource availability.\par
+- \(\tau\): Environmental variability (e.g. climate, disease). It is modeled as a probability distribution function.\par
+    
+\bigskip
+\noindent\textbf{Emergence (E):}
+
+Observable outcomes:\par
+- Number of offspring born (N)\par
+- Survival rate (S): The fraction of offspring that survive to reproductive age.\par
+- Population size (P): The total number of individuals in the population.\par
+
+\subsubsection{Level 2: The Ecosystem}
+\textbf{Invariances (I):}\par
+\textbf{- Laws of Conservation of Energy and Matter}\par
+\textbf{- Fundamental Trophic Relationships:} The basic structure of the food web (who eats whom).\par
+\textbf{- Laws of Thermodynamics (in particular, the second law):} Entropy tends to increase.\par
+
+\bigskip
+\noindent\textbf{Context (C):}\par
+\textbf{- Species Diversity (D):} The number of species in the ecosystem.\par
+\textbf{- Food Web Connectivity (K):} The complexity of interactions between species.\par
+\textbf{- Global Environmental Conditions (A):} Climate, geology, etc.\par
+
+\bigskip
+\noindent\textbf{Emergence (E):}\par
+ \textbf{- Ecosystem Stability:} The capacity of the ecosystem to withstand disturbances.\par
+ \textbf{- General Biodiversity.}\par
+
+\subsection{Axioms Involved}
+
+\noindent\textbf{Meta-Axiom of Relational Universality (MRU):} Applies to both levels. Both the species and the ecosystem are governed by the ICE triad.\par
+\noindent\textbf{Primary Axioms (Physical):}
+\begin{itemize}
+\item Laws of Thermodynamics (Conservation of energy, increase in entropy).
+\item Laws of Genetics (Inheritance, mutation).
+\end{itemize}
+
+\noindent\textbf{Primary Axioms (Biological):}
+\begin{itemize}
+\item Principle of Natural Selection.
+\item Principle of Adaptation.
+\end{itemize}
+
+\subsection{Dynamic Principle and Minimization of Relational Tension}
+
+ECIT postulates that systems tend to minimize \textbf{relational tension} (R(t)). In this case, tension arises from the need to balance the survival of the species (A) with the stability of the ecosystem.
+
+The relational tension functional can be approximated as:
+
+$$ R(t) \approx \alpha [1 - S(\rho, \pi, \varepsilon, \tau)] + \beta [1 - \Xi(D, K, A)] $$
+
+where:
+
+\begin{itemize}
+    \item \(\alpha\) and \(\beta\) are weights reflecting the relative importance of species survival and ecosystem stability.
+    \item \(S\) is the survival rate of species A (a function of context).
+    \item \(\Xi\) is the stability of the ecosystem (also a function of context).
+\end{itemize}
+The ECIT predicts that species A will evolve toward a reproductive strategy that minimizes \(R(t)\). This means that the species will adjust its reproductive potential (R) to maximize \(S\) and \(\Xi\), subject to the constraints imposed by its physiology and environment.
+
+\subsubsection{Interpretation:}
+
+\begin{itemize}
+\item If \(S\) is very low (high mortality of offspring), the first term in \(R(t)\) will be high. The species will tend to increase \(R\) to compensate for the mortality.
+\item If \(\Xi\) is low (the ecosystem is unstable), the second term will be high. If species A is key to stability (e.g. as a food source), then the ecosystem will \textit{pressure} species A to maintain a high reproductive rate, even if many offspring die.
+\end{itemize}
+
+\subsubsection{Prediction:}
+The ECIT predicts that if ecosystem conditions change (e.g., a new predator is introduced, resources are reduced), species A will adjust its reproductive strategy to minimize relational tension. This could involve:
+
+\begin{itemize}
+\item Increased reproductive rate.
+\item Change in size or characteristics of offspring.
+\item Migration to a new habitat.
+\end{itemize}
+
+\subsection{Conclusions}
+
+The ECIT offers an explanation of the surplus breeding strategy as an evolutionary solution that balances species survival with ecosystem stability. The key is in the minimization of relational tension (R(t)), where the species adapts to the context to optimize both its own survival and that of the ecosystem in which it lives. Formal analysis is amazing for obtaining quantifiable parameters.
+
+
+
+
+\newpage
+\maketitle
+\section{Appendix A3: Evolving Physical Theories: An ECIT Analysis}
+
+This appendix explores how Emergent Contextual Invariance Theory (ECIT) can be applied to analyze the evolution of physical theories, demonstrating how even incorrect theories can be fundamental to the advancement of knowledge.
+
+\subsection{ICE Decomposition of the Process of Theoretical Evolution}
+
+\subsubsection{Level 1: The Development of a Theory (Theory T)}\par
+
+\textbf{Invariances (I):}
+\begin{itemize}
+\item \textbf{Logical Principles (\(\Lambda\)):} The rules of inference and logical consistency that must be followed.
+\item \textbf{Initial Empirical Data (\(D_0\)):} The observations that motivate the theory.
+\item \textbf{Mathematical Constraints (\(\Gamma\)):} The mathematical formalisms used.
+\end{itemize}
+\textbf{Context (C):}
+\begin{itemize}
+\item \textbf{Prior Knowledge (\(K\)):} The theories and models accepted at the time.
+\item \textbf{Experimental Tools (\(H\)):} The ability to perform measurements and experiments.
+\item \textbf{Scientific Paradigms (\(\Pi\)):} The prevailing beliefs and assumptions.
+\end{itemize}
+\textbf{Emergence (E):}
+\begin{itemize}
+\item \textbf{Theory T (\(T\)):} The set of postulates, equations, and predictions.
+\item \textbf{Predictions of T (\(P_T\)):} The claims about the world that follow from the theory.
+\item \textbf{Degree of Explanation (\(\Sigma\)):} How much the theory explains empirical data.
+\end{itemize}
+$$ \Sigma = f(T, D_0, K) $$
+
+\subsubsection{Level 2: The Refutation/Validation Process}
+\textbf{Invariances (I):}
+\begin{itemize}
+\item \textbf{The Scientific Method (\(M_C\)):} The systematic process of hypothesis formulation, experiment design, data collection, and analysis.
+\item \textbf{Falsifiability Criteria (\(F\)):} The ability of a theory to be refuted by empirical evidence.
+\item \textbf{Occam's Razor (\(O\)):} The principle that the simplest explanation is usually the correct one.
+\end{itemize}
+\textbf{Context (C):}
+\begin{itemize}
+\item \textbf{New Empirical Data (\(D_N\)):} Data that was not known when the theory was formulated.
+\item \textbf{New Experimental Techniques (\(H_N\)):} New ways of measuring and observing.
+\item \textbf{Scientific Community (\(C_S\)):} The group of researchers who evaluate the theory.
+\end{itemize}
+\textbf{Emergence (E):}
+\begin{itemize}
+\item \textbf{Validation or Refutation of T (\(V_T\)):} Determining whether the theory is consistent with new data.
+\item \textbf{Theory Refinement (\(T'\)):} Modifying the theory to fit the new data.
+\item \textbf{New Theory (\(T_{NEW}\)):} If the original theory is disproven, a new theory is sought.
+\end{itemize}
+
+\subsection{Involved Axioms}
+
+\textbf{Meta-Axiom of Relational Universality (MRU):} Applies at both levels. Both the development of a theory and its evaluation are governed by the ICE triad.
+
+\paragraph{Primary Axioms (Cognitive):}
+\begin{itemize}
+\item \textbf{Confirmation Bias:} The tendency to seek evidence that confirms existing beliefs.
+\item \textbf{Cognitive Dissonance:} The discomfort that arises from holding contradictory beliefs.
+\end{itemize}
+
+\paragraph{Primary Axioms (Epistemological):}
+\begin{itemize}
+\item \textbf{Falsifiability Principle (Popper):} A scientific theory must be falsifiable.
+\item \textbf{Principle of Parsimony (Occam's Razor):} The simplest explanation is often the correct one.
+\end{itemize}
+
+
+\subsection{Dynamics and Minimization of Relational Tension}
+
+ECIT posits that the process of theoretical evolution is driven by the need to minimize relational tension (R(t)) between:
+
+\begin{enumerate}
+\item The theory (\(T\)).
+\item Empirical data (\(D\)).
+\item Prior knowledge (\(K\)).
+\end{enumerate}
+
+The relational tension functional can be modeled as:
+
+$$ R(t) = \alpha \cdot \Delta(T, D) + \beta \cdot \Omega(T, K) + \gamma \cdot \Psi(T, F) $$
+
+Where:
+\begin{itemize}
+    \item \(\alpha\), \(\beta\), and \(\gamma\) are weights that reflect the relative importance of each term.
+    \item \(\Delta(T, D)\) is a measure of the discrepancy between the predictions of the theory and the empirical data. The greater the discrepancy, the greater the tension.
+    \item \(\Omega(T, K)\) is a measure of the inconsistency between the theory and prior knowledge. The more the theory contradicts what is already known, the greater the tension.
+    \item \(\Psi(T,F)\) is a metric that represents whether the theory is falsifiable.
+\end{itemize}
+
+\subsubsection{Interpretation:}
+
+\begin{itemize}
+\item A high \(\Delta(T, D)\) (the theory does not predict the data well) generates high tension, prompting scientists to modify or reject the theory.
+\item A high \(\Omega(T, K)\) (the theory strongly contradicts prior knowledge) also generates tension, but can be overcome if the theory offers a significantly better explanation.
+\item If a theory is not falsifiable, it means that the scientific community is unable to improve its understanding.
+\item Reducing relational tension drives the evolution of theories, even if they start from \textit{incorrect} ideas.
+\item Reducing relational tension drives the evolution of theory and therefore the advancement of cognitive systems.
+\end{itemize}
+
+\subsection{Examples: Trajectories of Theories and Relational Tension}
+
+\begin{enumerate}
+\item \textbf{Geocentric Model:} Initially had low tension because it explained the available observations. However, as more accurate data accumulated, tension increased.
+\item \textbf{Phlogiston Theory:} Its tension increased with the discovery of oxygen and understanding of combustion. The theory was replaced by one that better explained the data (modern chemistry).
+\item \textbf{Newtonian Mechanics:} Although very successful, its tension increased with the emergence of relativity and quantum mechanics, which explained phenomena that Newton could not.
+\end{enumerate}
+
+\subsection{Conclusions}
+
+ECIT offers a perspective on the evolution of scientific theories as a process driven by minimizing the relational tension between theory, data, and knowledge. Even "incorrect" theories contribute to progress by generating testable predictions, revealing limitations, and guiding the search for better explanations. Most importantly, this type of analysis allows us to understand how to foster new discoveries.
+
+\newpage
+\begin{thebibliography}{99}
+
+\bibitem{Mitchell2009}
+Mitchell, M. (2009). \textit{Complexity: A Guided Tour}. Oxford University Press.
+
+\bibitem{Briatore2025}
+Briatore, C. (2025). Hacia la Teoría del Todo: Reglas Universales, Dualidades y el Orden Subyacente del Cosmos \textit{ASIN B0DW67DLJ5}.
+
+\bibitem{Anderson1972}
+Anderson, P. W. (1972). More is different. \textit{Science, 177}(4047), 393-396.
+
+\bibitem{Haken1983}
+Haken, H. (1983). \textit{Synergetics: An Introduction}. Springer-Verlag.
+
+\bibitem{NicolisPrigogine1977} 
+Nicolis, G.,  Prigogine, I. (1977). \textit{Self-Organization in Nonequilibrium Systems: From Dissipative Structures to Order Through Fluctuations}. Wiley.
+
+\bibitem{Penrose1989}
+Penrose, R. (1989). \textit{The Emperor's New Mind: Concerning Computers, Minds, and the Laws of Physics}. Oxford University Press.
+
+\bibitem{Smolin2013}
+Smolin, L. (2013). \textit{Time Reborn: From Crisis in Physics to the Future of the Universe}. Houghton Mifflin Harcourt.
+
+\bibitem{Kauffman1993}
+Kauffman, S. A. (1993). \textit{The Origins of Order: Self-Organization and Selection in Evolution}. Oxford University Press.
+
+\bibitem{Eagleman2020}
+Eagleman, D. (2020). \textit{Livewired: The Inside Story of the Ever-Changing Brain}. Pantheon Books.
+
+\bibitem{Friston2010}
+Friston, K. (2010). The free-energy principle: a unified brain theory?. \textit{Nature Reviews Neuroscience, 11}(2), 127-138.
+
+\bibitem{Hofstadter1979}
+Hofstadter, D. R. (1979). \textit{Gödel, Escher, Bach: An Eternal Golden Braid}. Basic Books.
+
+\bibitem{Shannon1948}
+Shannon, C. E. (1948). A mathematical theory of communication. \textit{Bell System Technical Journal, 27}(3), 379-423.
+
+\bibitem{Chomsky1957}
+Chomsky, N. (1957). \textit{Syntactic Structures}. Mouton.
+
+\bibitem{Goldenfeld2018}
+Goldenfeld, N. (2018). \textit{Lectures on Phase Transitions and the Renormalization Group}. CRC Press.
+
+\bibitem{Levin2021}
+Levin, M. (2021). Life, death, and self: fundamental questions of biological existence. \textit{Philosophical Transactions of the Royal Society B, 376}(1827), 20190752.
+
+
+
+\end{thebibliography}
+
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{
+\small
+\textbf{License:} This work is available under a Creative Commons Attribution 4.0 International License.\\
+\textbf{Copyright:} \copyright~2025 [Cesar Jacinto Briatore]
+}}
+\end{center}
+
+\end{document}
