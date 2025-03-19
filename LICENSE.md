@@ -5,6 +5,10 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by/4.
 
 Attribution 4.0 International
 
+You can cite all versions by using the 
+DOI https://doi.org/10.5281/zenodo.15015349
+This DOI represents all versions, and will always resolve to the latest one.
+
 =======================================================================
 
 Creative Commons Corporation ("Creative Commons") is not a law firm and
