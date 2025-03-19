@@ -12,31 +12,31 @@ This DOI represents all versions, and will always resolve to the latest one.
 ## Description
 This groundbreaking paper introduces the Emergent Contextual Invariance Theory (ECIT), a novel paradigm that resolves the fundamental dichotomy between reductionism and holism through its foundational ICE triad:
 
-    - Invariances (structural constraints)
-    - Contexts (interaction modulators)
-    - Emergence (irreducible relational properties)
+- Invariances (structural constraints)
+- Contexts (interaction modulators)
+- Emergence (irreducible relational properties)
 
 Core Contributions:
 
-    - Axiomatic Foundation: Rigorous mathematical formulation unifying principles of symmetry, relativity, and holography
-     - Dynamic Relational Principle: τ(t) temporal framework with contextual persistence functional R(t)
-    - Multiscale Predictive Protocol: Quantifiable method applicable from quantum phase transitions to neural systems
+- Axiomatic Foundation: Rigorous mathematical formulation unifying principles of symmetry, relativity, and holography
+- Dynamic Relational Principle: τ(t) temporal framework with contextual persistence functional R(t)
+- Multiscale Predictive Protocol: Quantifiable method applicable from quantum phase transitions to neural systems
 
 ## Key Innovations
 
 First theory to formally integrate:
 
-    - Quantum field constraints (microscale)
-    - Biological network dynamics (mesoscale)
-    - Cosmological structures (macroscale)
-    - Redefinition of time as emergent relational construct
-    - Experimental validation across 12 complex systems
+- Quantum field constraints (microscale)
+- Biological network dynamics (mesoscale)
+- Cosmological structures (macroscale)
+- Redefinition of time as emergent relational construct
+- Experimental validation across 12 complex systems
 
 Applications Demonstrated:
 
-    - Materials Science: Unification of electronic/structural properties
-    - Biological Networks: Emergence quantification in metabolic systems
-    - AI Systems: Framework for self-organizing algorithms
+- Materials Science: Unification of electronic/structural properties
+- Biological Networks: Emergence quantification in metabolic systems
+- AI Systems: Framework for self-organizing algorithms
 
 
 ## Recommended Citation
